@@ -1,6 +1,6 @@
 /* ========= VARIABLES ========= */
 :root{
-  --accent:#7F00FF;      /* ou #FF007F si tu préfères le rose dynamique   */
+  --accent:#7F00FF;          /* violet — change en #FF007F si tu préfères le rose   */
   --text:#000;
   --bg:#fff;
   --shadow:0 12px 24px rgba(0,0,0,.05);
@@ -11,33 +11,50 @@
 
 /* ========= RESET MINIMAL ========= */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--font-body);line-height:1.6;color:var(--text);background:var(--bg)}
+body{
+  font-family:var(--font-body);
+  line-height:1.6;
+  color:var(--text);
+  background:var(--bg);
+}
 a{text-decoration:none;color:inherit}
 
 /* ========= HEADER ========= */
 .header{
   position:fixed;top:0;left:0;width:100%;background:var(--bg);
-  box-shadow:var(--shadow);z-index:100;
+  box-shadow:var(--shadow);z-index:1000;
   display:flex;justify-content:space-between;align-items:center;
   padding:.75rem 1.25rem;
 }
-.logo{font-family:var(--font-heading);font-size:1.25rem;font-weight:700;}
+.logo{display:flex;align-items:center;font-family:var(--font-heading);font-size:1.25rem;font-weight:700;}
 .nav a{margin-left:1rem;font-size:.9rem;font-weight:600;}
 .nav a:hover{color:var(--accent);}
 
 /* ========= HERO ========= */
 .hero{
   display:flex;align-items:center;justify-content:center;
-  min-height:100vh;padding:6rem 1.5rem 3rem; /* espace pour le header */
-  background:url('/assets/hero-bg.jpg') center/cover no-repeat fixed,var(--bg);
+  min-height:100vh;padding:6rem 1.5rem 3rem; /* marge haute pour le header */
+  background:
+    url('assets/fond%20darehive.png') center/cover no-repeat fixed,
+    var(--bg);
 }
-.hero__content{max-width:640px;text-align:center;background:rgba(255,255,255,.8);padding:2rem;border-radius:var(--radius);}
-.hero__title{font-family:var(--font-heading);font-size:clamp(2rem,5vw,3.25rem);margin-bottom:1rem;}
+.hero__content{
+  max-width:640px;text-align:center;
+  background:rgba(255,255,255,.85);
+  padding:2rem;border-radius:var(--radius);
+}
+.hero__title{
+  font-family:var(--font-heading);
+  font-size:clamp(2rem,5vw,3.25rem);
+  margin-bottom:1rem;
+}
 .hero__subtitle{margin-bottom:2rem;font-size:1.05rem;}
 .btn{
   display:inline-block;padding:.85rem 1.5rem;border-radius:50px;
-  font-weight:700;font-family:var(--font-heading);background:var(--accent);color:#fff;
-  box-shadow:0 4px 10px rgba(0,0,0,.12);transition:transform .2s;
+  font-weight:700;font-family:var(--font-heading);
+  background:var(--accent);color:#fff;
+  box-shadow:0 4px 10px rgba(0,0,0,.12);
+  transition:transform .2s;
 }
 .btn:hover{transform:translateY(-4px);}
 .btn[aria-disabled="true"]{opacity:.65;cursor:not-allowed}
@@ -45,12 +62,22 @@ a{text-decoration:none;color:inherit}
 /* ========= SECTION GÉNÉRIQUE ========= */
 .section{padding:4rem 1.25rem;}
 .container{max-width:860px;margin:0 auto;}
-.section h2{font-family:var(--font-heading);font-size:2rem;margin-bottom:1rem;color:var(--accent);}
+.section h2{
+  font-family:var(--font-heading);
+  font-size:2rem;
+  margin-bottom:1rem;
+  color:var(--accent);
+}
 
 /* ========= FOOTER ========= */
-.footer{padding:2rem 1rem;text-align:center;font-size:.875rem;background:var(--bg);}
+.footer{
+  padding:2rem 1rem;
+  text-align:center;
+  font-size:.875rem;
+  background:var(--bg);
+}
 
 /* ========= RESPONSIVE ========= */
 @media(max-width:600px){
-  .nav{display:none;}        /* mobile-first : on cache le menu secondaire pour rester minimal */
+  .nav{display:none;}   /* menu texte masqué sur très petit écran */
 }
