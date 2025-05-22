@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={"antialiased"}
         style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}
       >
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
