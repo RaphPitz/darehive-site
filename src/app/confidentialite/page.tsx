@@ -16,8 +16,8 @@ export default function Confidentialite() {
               <li style={{ marginBottom: 8 }}><b>Données collectées</b><br />- Compte : nom, pseudo, email, mot de passe (chiffré)<br />- Profil : avatar, vidéos, préférences<br />- Technique : appareil, OS, logs, géolocalisation (si autorisée)</li>
               <li style={{ marginBottom: 8 }}><b>Utilisation</b><br />- Fournir et améliorer le service<br />- Proposer des défis personnalisés<br />- Statistiques et prévention des abus</li>
               <li style={{ marginBottom: 8 }}><b>Stockage & sécurité</b><br />Données hébergées en UE, sécurisées, accès restreint.</li>
-              <li style={{ marginBottom: 8 }}><b>Partage</b><br />Pas de revente. Partage possible avec des sous-traitants techniques (cloud, analytics) uniquement pour le fonctionnement de l'app.</li>
-              <li style={{ marginBottom: 8 }}><b>Durée de conservation</b><br />Pendant l'utilisation + 2 ans après désinscription.</li>
+              <li style={{ marginBottom: 8 }}><b>Partage</b><br />Pas de revente. Partage possible avec des sous-traitants techniques (cloud, analytics) uniquement pour le fonctionnement de l&apos;app.</li>
+              <li style={{ marginBottom: 8 }}><b>Durée de conservation</b><br />Pendant l&apos;utilisation + 2 ans après désinscription.</li>
               <li><b>Droits RGPD</b><br /></li>
             </ol>
           </div>

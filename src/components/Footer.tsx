@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+// import Image from 'next/image';
+// import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -9,6 +9,7 @@ export default function Footer() {
         borderTopRightRadius: '2rem',
         paddingBottom: 'env(safe-area-inset-bottom)'
       }}
+      className="glass footer"
     >
       <span>
         DareHive © {new Date().getFullYear()}

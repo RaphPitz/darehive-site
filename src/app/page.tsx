@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useRef, useEffect } from 'react';
@@ -72,7 +71,7 @@ export default function Home() {
           <span style={{ color: '#FFD600' }}>DareHive</span> : le défi vidéo nouvelle génération
         </h1>
         <p style={{ marginTop: 16, fontSize: '1.3rem', color: 'rgba(255,255,255,0.8)', textAlign: 'center', maxWidth: 600 }}>
-          Rejoins la ruche, relève des défis fun, partage tes vidéos et grimpe dans le classement !
+          Rejoins la ruche, relève des défis fun, partage tes vidéos et grimpe dans le classement&nbsp;!
         </p>
         <div style={{ marginTop: 32, display: 'flex', flexDirection: 'row', gap: 16, width: '100%', justifyContent: 'center', alignItems: 'center' }}>
           <a
@@ -82,7 +81,7 @@ export default function Home() {
             className="btn-premium"
           >
             <svg width="24" height="24" fill="currentColor" style={{ marginRight: 8 }} viewBox="0 0 24 24"><path d="M17.564 13.271c-.025-2.568 2.099-3.797 2.192-3.854-1.197-1.748-3.06-1.99-3.719-2.018-1.584-.161-3.09.927-3.892.927-.803 0-2.033-.904-3.349-.88-1.72.025-3.312 1.002-4.195 2.547-1.797 3.116-.459 7.728 1.29 10.257.857 1.236 1.872 2.626 3.21 2.574 1.297-.052 1.785-.832 3.353-.832 1.568 0 1.995.832 3.36.807 1.393-.025 2.267-1.262 3.117-2.5.613-.892.868-1.36 1.358-2.384-3.569-1.364-3.428-4.012-3.401-4.099zm-3.36-7.29c.715-.868 1.2-2.08 1.067-3.281-1.032.041-2.28.687-3.025 1.555-.664.779-1.247 2.021-1.027 3.211 1.163.09 2.37-.591 2.985-1.485z"/></svg>
-            Télécharger sur l'App Store
+            Télécharger sur l&apos;App Store
           </a>
           <button
             disabled
@@ -94,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Carrousel de captures d'écran */}
+      {/* Carrousel de captures d&apos;écran */}
       <section style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 64 }}>
         <h2 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#fff', marginBottom: 16, textShadow: '0 2px 16px #7B2FF2, 0 1px 2px #FFD600' }} id="features">
           Aperçu de DareHive
@@ -119,7 +118,7 @@ export default function Home() {
               >
                 <Image
                   src={src}
-                  alt={`Capture d'écran ${i + 1}`}
+                  alt={`Capture d&apos;écran ${i + 1}`}
                   width={320}
                   height={690}
                   style={{ width: 320, height: 'auto', objectFit: 'cover', display: 'block' }}
