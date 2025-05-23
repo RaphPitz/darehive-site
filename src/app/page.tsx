@@ -1,151 +1,288 @@
-'use client';
-
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { useRef, useEffect } from 'react';
-
-const screenshots = [
-  '/capture1.png',
-  '/capture2.png',
-  '/capture3.png',
-  '/capture4.png',
-  '/capture5.png',
-  '/capture6.png',
-];
 
 export default function Home() {
-  const carouselRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = carouselRef.current;
-    if (!el) return;
-    let startX = 0, scrollLeft = 0;
-    const onTouchStart = (e: TouchEvent) => {
-      startX = e.touches[0].pageX - el.offsetLeft;
-      scrollLeft = el.scrollLeft;
-    };
-    const onTouchMove = (e: TouchEvent) => {
-      if (!startX) return;
-      const x = e.touches[0].pageX - el.offsetLeft;
-      el.scrollLeft = scrollLeft - (x - startX);
-    };
-    el.addEventListener('touchstart', onTouchStart);
-    el.addEventListener('touchmove', onTouchMove);
-    return () => {
-      el.removeEventListener('touchstart', onTouchStart);
-      el.removeEventListener('touchmove', onTouchMove);
-    };
-  }, []);
-
-  const scroll = (direction: 'left' | 'right') => {
-    if (carouselRef.current) {
-      const scrollAmount = 320;
-      carouselRef.current.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth',
-      });
-    }
-  };
-
   return (
-    <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between', position: 'relative', overflowX: 'hidden' }}>
-      {/* Fond dégradé animé glossy */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: -10, animation: 'gradient-move 12s ease-in-out infinite', background: 'linear-gradient(135deg, #7B2FF2 0%, #F357A8 40%, #3B8AFF 80%, #FFD600 100%)', backgroundSize: '200% 200%' }} />
-      {/* Effet glossy */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: -10, pointerEvents: 'none', background: 'rgba(255,255,255,0.10)', backdropFilter: 'blur(24px)' }} />
-
+    <main style={{ 
+      flex: 1, 
+      minHeight: '100vh',
+      paddingBottom: '80px',
+      position: 'relative'
+    }}>
       <Navbar />
-
-      {/* Contenu principal */}
-      <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 64, marginBottom: 32, padding: '0 1rem', width: '100%', textAlign: 'center' }}>
-        <Image
-          src="/LogoRaph.png"
-          alt="Logo DareHive"
-          width={120}
-          height={120}
-          style={{ borderRadius: '2rem', boxShadow: '0 8px 32px #7B2FF299', border: '4px solid rgba(255,255,255,0.3)', background: 'rgba(255,255,255,0.1)' }}
-        />
-        <h1 style={{ marginTop: 32, fontSize: '2.5rem', fontWeight: 800, color: '#fff', textAlign: 'center', textShadow: '0 2px 16px #7B2FF2, 0 1px 2px #FFD600' }}>
-          Ose, filme, brille.<br />
-          <span style={{ color: '#FFD600' }}>DareHive</span> : le défi vidéo nouvelle génération
-        </h1>
-        <p style={{ marginTop: 16, fontSize: '1.3rem', color: 'rgba(255,255,255,0.8)', textAlign: 'center', maxWidth: 600 }}>
-          Rejoins la ruche, relève des défis fun, partage tes vidéos et grimpe dans le classement&nbsp;!
-        </p>
-        <div style={{ marginTop: 32, display: 'flex', flexDirection: 'row', gap: 16, width: '100%', justifyContent: 'center', alignItems: 'center' }}>
-          <a
-            href="https://apps.apple.com/fr/app/darehive/id000000000"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ display: 'inline-block', height: 48 }}
-          >
-            <img
-              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-              alt="Download on the App Store"
-              style={{ height: 48, width: 'auto', display: 'block' }}
-            />
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ display: 'inline-block', height: 48, opacity: 0.5, pointerEvents: 'none' }}
-          >
-            <img
-              src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png"
-              alt="Disponible sur Google Play (bientôt)"
-              style={{ height: 48, width: 'auto', display: 'block' }}
-            />
-          </a>
-        </div>
-      </section>
-
-      {/* Carrousel de captures d&apos;écran */}
-      <section style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 64 }}>
-        <h2 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#fff', marginBottom: 16, textShadow: '0 2px 16px #7B2FF2, 0 1px 2px #FFD600' }} id="features">
-          Aperçu de DareHive
-        </h2>
-        <div style={{ position: 'relative', width: '100%', maxWidth: 900 }}>
-          <button
-            aria-label="Précédent"
-            onClick={() => scroll('left')}
-            style={{ position: 'absolute', left: 0, top: '50%', transform: 'translateY(-50%)', zIndex: 10, background: 'rgba(255,255,255,0.3)', color: '#7B2FF2', fontWeight: 'bold', borderRadius: '50%', padding: 12, border: 'none', cursor: 'pointer', fontSize: 24 }}
-          >
-            ‹
-          </button>
-          <div
-            ref={carouselRef}
-            className="carousel"
-          >
-            {screenshots.map((src, i) => (
-              <div
-                key={src}
-                className="carousel-card"
-                style={{ minWidth: 320, maxWidth: 320, marginRight: i !== screenshots.length - 1 ? '-4px' : 0, borderRadius: '1.5rem', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.25)', border: '4px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.2)', backdropFilter: 'blur(24px)', scrollSnapAlign: 'center', transition: 'transform 0.3s' }}
-              >
-                <Image
-                  src={src}
-                  alt={`Capture d&apos;écran ${i + 1}`}
-                  width={320}
-                  height={690}
-                  style={{ width: 320, height: 'auto', objectFit: 'cover', display: 'block' }}
-                  priority={i === 0}
-                />
+      
+      {/* Hero Section Ultra Moderne */}
+      <section className="hero-section">
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <h1 className="hero-title">
+            🐝 DAREHIVE
+          </h1>
+          <h2 className="hero-subtitle">
+            La révolution des défis vidéo arrive ! 
+            Rejoins la ruche, crée du contenu viral et grimpe au sommet du classement !
+          </h2>
+          
+          <div className="download-badges">
+            <a href="https://apps.apple.com/app/darehive/id6478155193" target="_blank" rel="noopener noreferrer">
+              <img 
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+                alt="Télécharger sur l'App Store"
+                className="download-badge"
+              />
+            </a>
+            <div style={{ position: 'relative' }}>
+              <img 
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
+                alt="Bientôt sur Google Play"
+                className="download-badge"
+                style={{ opacity: 0.5, filter: 'grayscale(100%)' }}
+              />
+              <div style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                background: 'var(--glass-violet)',
+                color: 'var(--text-primary)',
+                padding: '4px 12px',
+                borderRadius: '20px',
+                fontSize: '0.8rem',
+                fontWeight: '600',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid var(--glass-border)'
+              }}>
+                BIENTÔT
               </div>
-            ))}
+            </div>
           </div>
-          <button
-            aria-label="Suivant"
-            onClick={() => scroll('right')}
-            style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)', zIndex: 10, background: 'rgba(255,255,255,0.3)', color: '#7B2FF2', fontWeight: 'bold', borderRadius: '50%', padding: 12, border: 'none', cursor: 'pointer', fontSize: 24 }}
-          >
-            ›
-          </button>
         </div>
       </section>
 
-      <Footer />
+      {/* Section Carousel Screenshots */}
+      <section style={{ padding: '60px 0' }}>
+        <h2 className="section-title">
+          📱 Découvre l&apos;Expérience DareHive
+        </h2>
+        <div className="carousel">
+          <div className="carousel-card">
+            <Image 
+              src="/screenshots/1.png"
+              alt="Interface DareHive - Découverte"
+              width={300}
+              height={600}
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
+          <div className="carousel-card">
+            <Image 
+              src="/screenshots/2.png"
+              alt="Interface DareHive - Création"
+              width={300}
+              height={600}
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
+          <div className="carousel-card">
+            <Image 
+              src="/screenshots/3.png"
+              alt="Interface DareHive - Classement"
+              width={300}
+              height={600}
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
+          <div className="carousel-card">
+            <Image 
+              src="/screenshots/4.png"
+              alt="Interface DareHive - Social"
+              width={300}
+              height={600}
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Section Fonctionnalités Premium */}
+      <section style={{ padding: '80px 0' }}>
+        <h2 className="section-title">
+          ⚡ Fonctionnalités Next-Gen
+        </h2>
+        <div className="feature-grid">
+          <div className="feature-card">
+            <div className="feature-icon">🎬</div>
+            <h3 style={{ 
+              fontSize: '1.5rem', 
+              fontWeight: '700', 
+              marginBottom: '16px',
+              color: 'var(--text-primary)'
+            }}>
+              Défis Vidéo Immersifs
+            </h3>
+            <p style={{ 
+              color: 'var(--text-secondary)', 
+              fontSize: '1rem',
+              lineHeight: '1.6'
+            }}>
+              Relève des défis créatifs, filme tes réactions les plus authentiques et partage ton talent avec la communauté DareHive !
+            </p>
+          </div>
+          
+          <div className="feature-card">
+            <div className="feature-icon">🏆</div>
+            <h3 style={{ 
+              fontSize: '1.5rem', 
+              fontWeight: '700', 
+              marginBottom: '16px',
+              color: 'var(--text-primary)'
+            }}>
+              Système de Classement
+            </h3>
+            <p style={{ 
+              color: 'var(--text-secondary)', 
+              fontSize: '1rem',
+              lineHeight: '1.6'
+            }}>
+              Gagne des points XP, grimpe dans les ranks et devient une légende ! Chaque défi relevé te rapproche du sommet.
+            </p>
+          </div>
+          
+          <div className="feature-card">
+            <div className="feature-icon">🌟</div>
+            <h3 style={{ 
+              fontSize: '1.5rem', 
+              fontWeight: '700', 
+              marginBottom: '16px',
+              color: 'var(--text-primary)'
+            }}>
+              Contenu Viral
+            </h3>
+            <p style={{ 
+              color: 'var(--text-secondary)', 
+              fontSize: '1rem',
+              lineHeight: '1.6'
+            }}>
+              Deviens viral ! Nos défis sont conçus pour générer du contenu authentique et engageant qui cartonne sur les réseaux.
+            </p>
+          </div>
+          
+          <div className="feature-card">
+            <div className="feature-icon">🚀</div>
+            <h3 style={{ 
+              fontSize: '1.5rem', 
+              fontWeight: '700', 
+              marginBottom: '16px',
+              color: 'var(--text-primary)'
+            }}>
+              Communauté Active
+            </h3>
+            <p style={{ 
+              color: 'var(--text-secondary)', 
+              fontSize: '1rem',
+              lineHeight: '1.6'
+            }}>
+              Rejoins une communauté de créateurs passionnés ! Découvre, like et partage les meilleures vidéos de la ruche.
+            </p>
+          </div>
+          
+          <div className="feature-card">
+            <div className="feature-icon">🎯</div>
+            <h3 style={{ 
+              fontSize: '1.5rem', 
+              fontWeight: '700', 
+              marginBottom: '16px',
+              color: 'var(--text-primary)'
+            }}>
+              Défis Personnalisés
+            </h3>
+            <p style={{ 
+              color: 'var(--text-secondary)', 
+              fontSize: '1rem',
+              lineHeight: '1.6'
+            }}>
+              Algorithme intelligent qui s&apos;adapte à tes goûts ! Reçois des défis sur mesure qui correspondent à ta personnalité.
+            </p>
+          </div>
+          
+          <div className="feature-card">
+            <div className="feature-icon">💎</div>
+            <h3 style={{ 
+              fontSize: '1.5rem', 
+              fontWeight: '700', 
+              marginBottom: '16px',
+              color: 'var(--text-primary)'
+            }}>
+              Récompenses Exclusives
+            </h3>
+            <p style={{ 
+              color: 'var(--text-secondary)', 
+              fontSize: '1rem',
+              lineHeight: '1.6'
+            }}>
+              Débloque des badges rares, des titres prestigieux et des récompenses exclusives en relevant nos défis les plus épiques !
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Call to Action Final */}
+      <section style={{ 
+        padding: '100px 20px',
+        textAlign: 'center',
+        background: 'var(--glass-violet)',
+        backdropFilter: 'blur(24px)',
+        margin: '0 20px',
+        borderRadius: '30px',
+        border: '1px solid var(--glass-border)'
+      }}>
+        <h2 style={{
+          fontSize: 'clamp(2rem, 4vw, 3rem)',
+          fontWeight: '800',
+          marginBottom: '24px',
+          background: 'linear-gradient(135deg, var(--text-primary), var(--accent-light))',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text'
+        }}>
+          🐝 Prêt à rejoindre la ruche ?
+        </h2>
+        <p style={{
+          fontSize: 'clamp(1.1rem, 2.5vw, 1.3rem)',
+          color: 'var(--text-secondary)',
+          maxWidth: '600px',
+          margin: '0 auto 50px',
+          lineHeight: '1.6'
+        }}>
+          Télécharge DareHive maintenant et commence ton aventure dans l&apos;univers le plus fun des défis vidéo !
+        </p>
+        
+        <div className="download-badges">
+          <a href="https://apps.apple.com/app/darehive/id6478155193" target="_blank" rel="noopener noreferrer">
+            <img 
+              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+              alt="Télécharger sur l'App Store"
+              className="download-badge"
+              style={{ height: '70px' }}
+            />
+          </a>
+        </div>
+        
+        <div style={{
+          marginTop: '40px',
+          padding: '20px',
+          background: 'rgba(139, 92, 246, 0.1)',
+          borderRadius: '20px',
+          border: '1px solid rgba(196, 132, 252, 0.2)'
+        }}>
+          <p style={{
+            color: 'var(--text-secondary)',
+            fontSize: '0.9rem',
+            margin: 0
+          }}>
+            ⚡ Version Android en développement - Rejoins notre liste d&apos;attente !
+          </p>
+        </div>
+      </section>
     </main>
   );
 }

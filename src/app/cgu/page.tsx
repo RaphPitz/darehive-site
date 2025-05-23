@@ -1,49 +1,301 @@
-'use client';
-
 import Navbar from '../../components/Navbar';
 // import Footer from '../../components/Footer';
 
 export default function CGU() {
   return (
-    <main>
+    <main style={{ 
+      flex: 1, 
+      minHeight: '100vh',
+      paddingBottom: '80px',
+      position: 'relative'
+    }}>
       <Navbar />
-      <section style={{ textAlign: 'center', margin: '0 auto', maxWidth: 1200 }}>
-        <h1 style={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: 32 }}>Conditions Générales d’Utilisation / Terms of Service</h1>
-        <div style={{ display: 'flex', gap: 32, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <div style={{ flex: 1, minWidth: 300, background: 'rgba(255,255,255,0.15)', borderRadius: 16, padding: 24, marginBottom: 24, boxShadow: '0 4px 24px #7B2FF299' }}>
-            <h2 style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: 16 }}>🇫🇷 Version française</h2>
-            <ol style={{ textAlign: 'left', margin: '0 auto', marginBottom: 0, paddingLeft: 24 }}>
-              <li style={{ marginBottom: 8 }}><b>Présentation</b><br />DareHive est éditée par Raphael Pitzini, entrepreneur individuel. En utilisant l’application, vous acceptez sans réserve les présentes CGU.</li>
-              <li style={{ marginBottom: 8 }}><b>Objet</b><br />Les CGU définissent les modalités d’utilisation de DareHive.</li>
-              <li style={{ marginBottom: 8 }}><b>Accès au service</b><br />L’accès est gratuit. Certaines fonctionnalités sont payantes (abonnement, achats intégrés).</li>
-              <li style={{ marginBottom: 8 }}><b>Compte utilisateur</b><br />Création obligatoire pour certaines fonctions. Informations exactes requises. L’utilisateur est responsable de la confidentialité de son compte.</li>
-              <li style={{ marginBottom: 8 }}><b>Règles de comportement</b><br />- Ne pas publier de contenus illicites, offensants, violents ou discriminatoires.<br />- Respecter les autres membres.<br />- Ne pas tricher, spammer ou manipuler les classements.<br />- Ne pas usurper l’identité d’autrui.</li>
-              <li style={{ marginBottom: 8 }}><b>Modération & Signalement</b><br />Les contenus sont modérés. Tout abus peut entraîner la suspension ou la suppression du compte.</li>
-              <li style={{ marginBottom: 8 }}><b>Propriété intellectuelle</b><br />Les contenus (vidéos, textes, images, logo) restent la propriété de leurs auteurs, mais vous accordez à DareHive une licence d’utilisation pour la diffusion sur l’app.</li>
-              <li style={{ marginBottom: 8 }}><b>Responsabilité</b><br />DareHive n’est pas responsable des contenus publiés par les utilisateurs, ni des bugs techniques indépendants de sa volonté.</li>
-              <li style={{ marginBottom: 8 }}><b>Sécurité</b><br />Toute tentative de piratage, d’accès non autorisé ou de perturbation du service entraînera des poursuites.</li>
-              <li style={{ marginBottom: 8 }}><b>Suspension / Résiliation</b><br />DareHive peut suspendre ou supprimer un compte en cas de non-respect des CGU.</li>
-              <li style={{ marginBottom: 8 }}><b>Modifications</b><br />Les CGU peuvent être modifiées à tout moment. Les utilisateurs seront informés via l’application.</li>
-              <li style={{ marginBottom: 8 }}><b>Contact</b><br /></li>
-            </ol>
+      
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <h1 className="hero-title">
+            📋 Conditions Générales d&apos;Utilisation
+          </h1>
+          <h2 className="hero-subtitle">
+            Les règles du jeu pour une expérience DareHive au top ! 
+          </h2>
+          <p style={{ 
+            color: 'var(--text-secondary)', 
+            fontSize: '1rem',
+            textAlign: 'center',
+            marginTop: '20px'
+          }}>
+            Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}
+          </p>
+        </div>
+      </section>
+
+      {/* Layout Bilingue */}
+      <section style={{ padding: '60px 20px' }}>
+        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(600px, 1fr))', gap: '40px' }}>
+            
+            {/* Version Française */}
+            <div className="glass" style={{ padding: '50px 40px', position: 'relative' }}>
+              <div style={{
+                position: 'absolute',
+                top: '20px',
+                right: '20px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                background: 'rgba(0, 85, 164, 0.2)',
+                padding: '8px 16px',
+                borderRadius: '20px',
+                border: '1px solid rgba(0, 85, 164, 0.3)'
+              }}>
+                <span style={{ fontSize: '1.2rem' }}>🇫🇷</span>
+                <span style={{ color: 'white', fontWeight: '600', fontSize: '0.9rem' }}>FRANÇAIS</span>
+              </div>
+              
+              <h2 style={{ 
+                fontSize: '2rem', 
+                fontWeight: '700', 
+                marginBottom: '30px',
+                color: 'var(--text-primary)',
+                marginTop: '40px'
+              }}>
+                📱 Conditions d&apos;Utilisation DareHive
+              </h2>
+              
+              <div style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.7' }}>
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  🎯 1. Objet des CGU
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  Les présentes Conditions Générales d&apos;Utilisation (CGU) régissent l&apos;utilisation de l&apos;application mobile DareHive, 
+                  plateforme innovante de défis vidéo qui révolutionne le divertissement mobile.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                  En utilisant DareHive, tu acceptes intégralement ces conditions. L&apos;app est conçue pour être fun, 
+                  sécurisée et respectueuse de tous les utilisateurs.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  👤 2. Conditions d&apos;Accès
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  <strong>Âge minimum :</strong> Tu dois avoir au moins 13 ans pour utiliser DareHive. 
+                  Les mineurs de moins de 16 ans doivent obtenir l&apos;autorisation parentale.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                  <strong>Compte utilisateur :</strong> Tu es responsable de la sécurité de ton compte et de tes identifiants. 
+                  Choisis un mot de passe fort et ne le partage jamais.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  🎬 3. Utilisation de la Plateforme
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  <strong>Contenu autorisé :</strong> Publie uniquement du contenu original, créatif et respectueux. 
+                  Les défis doivent être amusants sans être dangereux ou offensants.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                  <strong>Contenu interdit :</strong> Sont prohibés les contenus violents, discriminatoires, 
+                  à caractère sexuel, ou encourageant des comportements dangereux.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                  <strong>Droits d&apos;auteur :</strong> Respecte les droits de propriété intellectuelle. 
+                  N&apos;utilise que de la musique libre de droits ou pour laquelle tu as les autorisations.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  🏆 4. Système de Points et Classements
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  Les points XP et badges sont attribués selon nos algorithmes propriétaires. 
+                  Toute tentative de manipulation du système est interdite et peut entraîner la suspension du compte.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  🔒 5. Protection des Données
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  Tes données personnelles sont protégées conformément au RGPD. Consulte notre 
+                  <a href="/confidentialite" style={{ color: 'var(--accent-light)', textDecoration: 'none' }}> Politique de Confidentialité</a> 
+                  pour tous les détails.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  ⚖️ 6. Responsabilités
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  DareHive fournit la plateforme &quot;en l&apos;état&quot;. Nous nous efforçons d&apos;assurer la disponibilité 
+                  du service mais ne garantissons pas une absence totale d&apos;interruptions.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                  Tu es responsable de tes contenus et interactions. DareHive se réserve le droit de modérer 
+                  et supprimer tout contenu inapproprié.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  📞 7. Contact
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  Pour toute question concernant ces CGU : 
+                  <a href="mailto:legal@darehive.app" style={{ color: 'var(--accent-light)', textDecoration: 'none' }}>
+                    legal@darehive.app
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            {/* Version Anglaise */}
+            <div className="glass" style={{ padding: '50px 40px', position: 'relative' }}>
+              <div style={{
+                position: 'absolute',
+                top: '20px',
+                right: '20px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                background: 'rgba(220, 53, 69, 0.2)',
+                padding: '8px 16px',
+                borderRadius: '20px',
+                border: '1px solid rgba(220, 53, 69, 0.3)'
+              }}>
+                <span style={{ fontSize: '1.2rem' }}>🇬🇧</span>
+                <span style={{ color: 'white', fontWeight: '600', fontSize: '0.9rem' }}>ENGLISH</span>
+              </div>
+              
+              <h2 style={{ 
+                fontSize: '2rem', 
+                fontWeight: '700', 
+                marginBottom: '30px',
+                color: 'var(--text-primary)',
+                marginTop: '40px'
+              }}>
+                📱 DareHive Terms of Service
+              </h2>
+              
+              <div style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.7' }}>
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  🎯 1. Purpose of Terms
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  These Terms of Service (ToS) govern the use of the DareHive mobile application, 
+                  an innovative video challenge platform that revolutionizes mobile entertainment.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                  By using DareHive, you fully accept these terms. The app is designed to be fun, 
+                  secure and respectful of all users.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  👤 2. Access Conditions
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  <strong>Minimum age:</strong> You must be at least 13 years old to use DareHive. 
+                  Minors under 16 must obtain parental authorization.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                  <strong>User account:</strong> You are responsible for the security of your account and credentials. 
+                  Choose a strong password and never share it.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  🎬 3. Platform Usage
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  <strong>Authorized content:</strong> Only post original, creative and respectful content. 
+                  Challenges should be fun without being dangerous or offensive.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                  <strong>Prohibited content:</strong> Violent, discriminatory, sexual content, 
+                  or content encouraging dangerous behavior is prohibited.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                  <strong>Copyright:</strong> Respect intellectual property rights. 
+                  Only use royalty-free music or music for which you have permissions.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  🏆 4. Points and Rankings System
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  XP points and badges are awarded according to our proprietary algorithms. 
+                  Any attempt to manipulate the system is prohibited and may result in account suspension.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  🔒 5. Data Protection
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  Your personal data is protected in accordance with GDPR. Check our 
+                  <a href="/confidentialite" style={{ color: 'var(--accent-light)', textDecoration: 'none' }}> Privacy Policy</a> 
+                  for all details.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  ⚖️ 6. Responsibilities
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  DareHive provides the platform &quot;as is&quot;. We strive to ensure service availability 
+                  but do not guarantee a complete absence of interruptions.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                  You are responsible for your content and interactions. DareHive reserves the right to moderate 
+                  and remove any inappropriate content.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  📞 7. Contact
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  For any questions regarding these ToS: 
+                  <a href="mailto:legal@darehive.app" style={{ color: 'var(--accent-light)', textDecoration: 'none' }}>
+                    legal@darehive.app
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
-          <div style={{ flex: 1, minWidth: 300, background: 'rgba(255,255,255,0.15)', borderRadius: 16, padding: 24, marginBottom: 24, boxShadow: '0 4px 24px #7B2FF299' }}>
-            <h2 style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: 16 }}>🇬🇧 English version</h2>
-            <ol style={{ textAlign: 'left', margin: '0 auto', marginBottom: 0, paddingLeft: 24 }}>
-              <li style={{ marginBottom: 8 }}><b>Overview</b><br />DareHive is published by Raphael Pitzini, sole proprietor. By using the app, you fully accept these Terms of Service.</li>
-              <li style={{ marginBottom: 8 }}><b>Purpose</b><br />These Terms define the conditions for using DareHive.</li>
-              <li style={{ marginBottom: 8 }}><b>Access to the service</b><br />Access is free. Some features require payment (subscription, in-app purchases).</li>
-              <li style={{ marginBottom: 8 }}><b>User account</b><br />Account creation is required for some features. Accurate information is mandatory. Users are responsible for their account confidentiality.</li>
-              <li style={{ marginBottom: 8 }}><b>Code of conduct</b><br />- Do not post illegal, offensive, violent, or discriminatory content.<br />- Respect other members.<br />- No cheating, spamming, or manipulating rankings.<br />- Do not impersonate others.</li>
-              <li style={{ marginBottom: 8 }}><b>Moderation & Reporting</b><br />Content is moderated. Abuse may result in account suspension or deletion.</li>
-              <li style={{ marginBottom: 8 }}><b>Intellectual property</b><br />Content (videos, text, images, logo) remains the property of its authors, but you grant DareHive a license to use it for app distribution.</li>
-              <li style={{ marginBottom: 8 }}><b>Liability</b><br />DareHive is not responsible for user-generated content or technical bugs beyond its control.</li>
-              <li style={{ marginBottom: 8 }}><b>Security</b><br />Any hacking attempt, unauthorized access, or service disruption will be prosecuted.</li>
-              <li style={{ marginBottom: 8 }}><b>Suspension / Termination</b><br />DareHive may suspend or delete an account in case of ToS violation.</li>
-              <li style={{ marginBottom: 8 }}><b>Changes</b><br />The ToS may be updated at any time. Users will be notified via the app.</li>
-              <li style={{ marginBottom: 8 }}><b>Contact</b><br /></li>
-            </ol>
-          </div>
+        </div>
+      </section>
+
+      {/* Section CTA */}
+      <section style={{ 
+        padding: '80px 20px',
+        textAlign: 'center',
+        background: 'var(--glass-violet)',
+        backdropFilter: 'blur(24px)',
+        margin: '0 20px',
+        borderRadius: '30px',
+        border: '1px solid var(--glass-border)'
+      }}>
+        <h2 style={{
+          fontSize: 'clamp(1.8rem, 3vw, 2.5rem)',
+          fontWeight: '700',
+          marginBottom: '20px',
+          color: 'var(--text-primary)'
+        }}>
+          ✅ Tout compris ?
+        </h2>
+        <p style={{
+          fontSize: '1.1rem',
+          color: 'var(--text-secondary)',
+          maxWidth: '500px',
+          margin: '0 auto 40px',
+          lineHeight: '1.6'
+        }}>
+          Ces conditions sont là pour que tout le monde s&apos;amuse en toute sécurité sur DareHive !
+        </p>
+        
+        <div className="download-badges">
+          <a href="https://apps.apple.com/app/darehive/id6478155193" target="_blank" rel="noopener noreferrer">
+            <img 
+              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+              alt="Télécharger sur l'App Store"
+              className="download-badge"
+              style={{ height: '60px' }}
+            />
+          </a>
         </div>
       </section>
     </main>
