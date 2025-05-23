@@ -1,7 +1,22 @@
+'use client';
+
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
+import { useRef } from 'react';
 
 export default function Home() {
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const scrollCarousel = (direction: 'left' | 'right') => {
+    if (carouselRef.current) {
+      const scrollAmount = 320; // Largeur d'une carte + gap
+      carouselRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <main style={{ 
       flex: 1, 
@@ -72,60 +87,127 @@ export default function Home() {
         <h2 className="section-title">
           📱 Découvre l&apos;Expérience DareHive
         </h2>
-        <div className="carousel">
-          <div className="carousel-card">
-            <Image 
-              src="/capture1.png"
-              alt="Interface DareHive - Découverte"
-              width={300}
-              height={600}
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-          <div className="carousel-card">
-            <Image 
-              src="/capture2.png"
-              alt="Interface DareHive - Création"
-              width={300}
-              height={600}
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-          <div className="carousel-card">
-            <Image 
-              src="/capture3.png"
-              alt="Interface DareHive - Classement"
-              width={300}
-              height={600}
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-          <div className="carousel-card">
-            <Image 
-              src="/capture4.png"
-              alt="Interface DareHive - Social"
-              width={300}
-              height={600}
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-          <div className="carousel-card">
-            <Image 
-              src="/capture5.png"
-              alt="Interface DareHive - Profil"
-              width={300}
-              height={600}
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-          <div className="carousel-card">
-            <Image 
-              src="/capture6.png"
-              alt="Interface DareHive - Défis"
-              width={300}
-              height={600}
-              style={{ objectFit: 'contain' }}
-            />
+        <div style={{ position: 'relative', maxWidth: '1200px', margin: '0 auto' }}>
+          {/* Bouton Précédent */}
+          <button
+            className="carousel-nav-button"
+            onClick={() => scrollCarousel('left')}
+            style={{
+              position: 'absolute',
+              left: '10px',
+              top: '50%',
+              transform: 'translateY(-50%)',
+              zIndex: 10,
+              background: 'var(--glass-violet)',
+              backdropFilter: 'blur(24px)',
+              border: '1px solid var(--glass-border)',
+              borderRadius: '50%',
+              width: '50px',
+              height: '50px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              cursor: 'pointer',
+              fontSize: '1.5rem',
+              color: 'var(--text-primary)',
+              transition: 'all 0.3s ease',
+              boxShadow: '0 8px 25px rgba(139, 92, 246, 0.3)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-50%) scale(1.1)';
+              e.currentTarget.style.boxShadow = '0 12px 35px rgba(139, 92, 246, 0.5)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(-50%) scale(1)';
+              e.currentTarget.style.boxShadow = '0 8px 25px rgba(139, 92, 246, 0.3)';
+            }}
+          >
+            ←
+          </button>
+
+          {/* Bouton Suivant */}
+          <button
+            className="carousel-nav-button"
+            onClick={() => scrollCarousel('right')}
+            style={{
+              position: 'absolute',
+              right: '10px',
+              top: '50%',
+              transform: 'translateY(-50%)',
+              zIndex: 10,
+              background: 'var(--glass-violet)',
+              backdropFilter: 'blur(24px)',
+              border: '1px solid var(--glass-border)',
+              borderRadius: '50%',
+              width: '50px',
+              height: '50px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              cursor: 'pointer',
+              fontSize: '1.5rem',
+              color: 'var(--text-primary)',
+              transition: 'all 0.3s ease',
+              boxShadow: '0 8px 25px rgba(139, 92, 246, 0.3)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-50%) scale(1.1)';
+              e.currentTarget.style.boxShadow = '0 12px 35px rgba(139, 92, 246, 0.5)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(-50%) scale(1)';
+              e.currentTarget.style.boxShadow = '0 8px 25px rgba(139, 92, 246, 0.3)';
+            }}
+          >
+            →
+          </button>
+
+          <div ref={carouselRef} className="carousel">
+            <div className="carousel-card">
+              <Image 
+                src="/capture1.png"
+                alt="Interface DareHive - Découverte"
+                width={300}
+                height={600}
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+            <div className="carousel-card">
+              <Image 
+                src="/capture2.png"
+                alt="Interface DareHive - Création"
+                width={300}
+                height={600}
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+            <div className="carousel-card">
+              <Image 
+                src="/capture3.png"
+                alt="Interface DareHive - Classement"
+                width={300}
+                height={600}
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+            <div className="carousel-card">
+              <Image 
+                src="/capture4.png"
+                alt="Interface DareHive - Social"
+                width={300}
+                height={600}
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+            <div className="carousel-card">
+              <Image 
+                src="/capture5.png"
+                alt="Interface DareHive - Profil"
+                width={300}
+                height={600}
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
           </div>
         </div>
       </section>

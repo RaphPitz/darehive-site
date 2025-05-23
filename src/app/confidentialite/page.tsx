@@ -34,7 +34,11 @@ export default function Confidentialite() {
       {/* Layout Bilingue */}
       <section style={{ padding: '60px 20px' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(600px, 1fr))', gap: '40px' }}>
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(clamp(280px, 45vw, 500px), 1fr))', 
+            gap: 'clamp(20px, 4vw, 40px)'
+          }}>
             
             {/* Version Française */}
             <div className="glass" style={{ padding: '50px 40px', position: 'relative' }}>

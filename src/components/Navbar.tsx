@@ -7,11 +7,12 @@ export default function Navbar() {
       <div style={{ 
         display: 'flex', 
         alignItems: 'center', 
-        justifyContent: 'center',
-        gap: '40px',
+        justifyContent: 'space-between',
+        gap: 'clamp(8px, 2vw, 20px)',
         width: '100%',
         maxWidth: '1000px',
-        margin: '0 auto'
+        margin: '0 auto',
+        padding: '0 clamp(10px, 2vw, 20px)'
       }}>
         {/* Logo DareHive */}
         <Link 
@@ -20,50 +21,102 @@ export default function Navbar() {
             textDecoration: 'none',
             display: 'flex',
             alignItems: 'center',
-            gap: '12px',
-            padding: '12px 20px',
+            gap: 'clamp(6px, 1vw, 12px)',
+            padding: 'clamp(8px, 1.5vw, 12px) clamp(12px, 2vw, 20px)',
             borderRadius: '50px',
             background: 'linear-gradient(135deg, var(--primary-violet), var(--accent-violet))',
             color: 'white',
             fontWeight: '700',
-            fontSize: '1.2rem',
+            fontSize: 'clamp(0.9rem, 2vw, 1.2rem)',
             transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
             boxShadow: '0 4px 20px rgba(139, 92, 246, 0.4)',
-            border: '1px solid rgba(255, 255, 255, 0.2)'
+            border: '1px solid rgba(255, 255, 255, 0.2)',
+            flexShrink: 0
           }}
         >
           <Image 
             src="/LogoRaph.png" 
             alt="Logo DareHive" 
-            width={24} 
-            height={24} 
-            style={{ borderRadius: '6px' }}
+            width={20} 
+            height={20} 
+            style={{ borderRadius: '4px' }}
           />
           <span>DareHive</span>
         </Link>
 
-        {/* Navigation Links */}
-        <div style={{ 
-          display: 'flex', 
-          alignItems: 'center', 
-          gap: '8px',
-          background: 'rgba(139, 92, 246, 0.1)',
-          padding: '8px',
-          borderRadius: '50px',
-          border: '1px solid var(--glass-border)',
-          backdropFilter: 'blur(10px)'
-        }}>
-          <Link href="/fonctionnalites">
-            ⚡ Fonctionnalités
+        {/* Navigation Links - Version desktop */}
+        <div 
+          className="navbar-links-desktop"
+          style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '6px',
+            background: 'rgba(139, 92, 246, 0.1)',
+            padding: '6px',
+            borderRadius: '50px',
+            border: '1px solid var(--glass-border)',
+            backdropFilter: 'blur(10px)'
+          }}
+        >
+          <Link 
+            href="/fonctionnalites"
+            style={{
+              padding: '8px 12px',
+              borderRadius: '25px',
+              textDecoration: 'none',
+              color: 'var(--text-secondary)',
+              fontSize: 'clamp(0.7rem, 1.5vw, 0.85rem)',
+              fontWeight: '500',
+              transition: 'all 0.3s ease',
+              whiteSpace: 'nowrap'
+            }}
+          >
+            ⚡
           </Link>
-          <Link href="/contact">
-            📞 Contact
+          <Link 
+            href="/contact"
+            style={{
+              padding: '8px 12px',
+              borderRadius: '25px',
+              textDecoration: 'none',
+              color: 'var(--text-secondary)',
+              fontSize: 'clamp(0.7rem, 1.5vw, 0.85rem)',
+              fontWeight: '500',
+              transition: 'all 0.3s ease',
+              whiteSpace: 'nowrap'
+            }}
+          >
+            📞
           </Link>
-          <Link href="/cgu">
-            📋 CGU
+          <Link 
+            href="/cgu"
+            style={{
+              padding: '8px 12px',
+              borderRadius: '25px',
+              textDecoration: 'none',
+              color: 'var(--text-secondary)',
+              fontSize: 'clamp(0.7rem, 1.5vw, 0.85rem)',
+              fontWeight: '500',
+              transition: 'all 0.3s ease',
+              whiteSpace: 'nowrap'
+            }}
+          >
+            📋
           </Link>
-          <Link href="/confidentialite">
-            🔒 Confidentialité
+          <Link 
+            href="/confidentialite"
+            style={{
+              padding: '8px 12px',
+              borderRadius: '25px',
+              textDecoration: 'none',
+              color: 'var(--text-secondary)',
+              fontSize: 'clamp(0.7rem, 1.5vw, 0.85rem)',
+              fontWeight: '500',
+              transition: 'all 0.3s ease',
+              whiteSpace: 'nowrap'
+            }}
+          >
+            🔒
           </Link>
         </div>
 
@@ -74,14 +127,18 @@ export default function Navbar() {
           rel="noopener noreferrer"
           className="btn-premium"
           style={{
-            padding: '12px 24px',
-            fontSize: '0.95rem',
+            padding: 'clamp(8px, 1.5vw, 12px) clamp(10px, 2vw, 20px)',
+            fontSize: 'clamp(0.75rem, 1.5vw, 0.95rem)',
             fontWeight: '600',
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            flexShrink: 0,
+            display: 'flex',
+            alignItems: 'center',
+            gap: 'clamp(4px, 1vw, 8px)'
           }}
         >
-          <span style={{ fontSize: '1.2rem' }}>📱</span>
-          Télécharger
+          <span style={{ fontSize: 'clamp(0.9rem, 2vw, 1.2rem)' }}>📱</span>
+          <span className="download-text">Télécharger</span>
         </a>
       </div>
     </nav>

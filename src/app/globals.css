@@ -328,6 +328,30 @@ html, body {
   }
 }
 
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-links-desktop {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-text {
+    display: none;
+  }
+}
+
+/* Boutons navigation carousel - Desktop seulement */
+.carousel-nav-button {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .carousel-nav-button {
+    display: none !important;
+  }
+}
+
 @media (max-width: 640px) {
   html, body {
     font-size: 15px;
@@ -335,9 +359,7 @@ html, body {
   
   .topbar {
     margin: 10px;
-    padding: 15px 20px;
-    flex-direction: column;
-    gap: 15px;
+    padding: 12px 15px;
   }
   
   .topbar a {
@@ -346,7 +368,7 @@ html, body {
   }
   
   .hero-section {
-    padding: 60px 20px;
+    padding: 60px 15px;
   }
   
   .carousel-card {
@@ -370,5 +392,18 @@ html, body {
   .footer {
     padding: 30px 20px;
     text-align: center;
+  }
+  
+  /* Amélioration responsive pour les pages de contenu */
+  .hero-section,
+  .feature-grid,
+  section {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  .glass {
+    margin: 0 5px;
+    padding: 20px 15px !important;
   }
 }
