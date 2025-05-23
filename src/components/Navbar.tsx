@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Navbar() {
@@ -31,7 +32,13 @@ export default function Navbar() {
             border: '1px solid rgba(255, 255, 255, 0.2)'
           }}
         >
-          <span style={{ fontSize: '1.5rem' }}>🐝</span>
+          <Image 
+            src="/LogoRaph.png" 
+            alt="Logo DareHive" 
+            width={24} 
+            height={24} 
+            style={{ borderRadius: '6px' }}
+          />
           <span>DareHive</span>
         </Link>
 

@@ -14,9 +14,18 @@ export default function Home() {
       {/* Hero Section Ultra Moderne */}
       <section className="hero-section">
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h1 className="hero-title">
-            🐝 DAREHIVE
-          </h1>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px', marginBottom: '24px' }}>
+            <Image 
+              src="/LogoRaph.png" 
+              alt="Logo DareHive" 
+              width={60} 
+              height={60} 
+              style={{ borderRadius: '12px' }}
+            />
+            <h1 className="hero-title" style={{ margin: 0 }}>
+              DAREHIVE
+            </h1>
+          </div>
           <h2 className="hero-subtitle">
             La révolution des défis vidéo arrive ! 
             Rejoins la ruche, crée du contenu viral et grimpe au sommet du classement !
@@ -66,7 +75,7 @@ export default function Home() {
         <div className="carousel">
           <div className="carousel-card">
             <Image 
-              src="/screenshots/1.png"
+              src="/capture1.png"
               alt="Interface DareHive - Découverte"
               width={300}
               height={600}
@@ -75,7 +84,7 @@ export default function Home() {
           </div>
           <div className="carousel-card">
             <Image 
-              src="/screenshots/2.png"
+              src="/capture2.png"
               alt="Interface DareHive - Création"
               width={300}
               height={600}
@@ -84,7 +93,7 @@ export default function Home() {
           </div>
           <div className="carousel-card">
             <Image 
-              src="/screenshots/3.png"
+              src="/capture3.png"
               alt="Interface DareHive - Classement"
               width={300}
               height={600}
@@ -93,8 +102,26 @@ export default function Home() {
           </div>
           <div className="carousel-card">
             <Image 
-              src="/screenshots/4.png"
+              src="/capture4.png"
               alt="Interface DareHive - Social"
+              width={300}
+              height={600}
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
+          <div className="carousel-card">
+            <Image 
+              src="/capture5.png"
+              alt="Interface DareHive - Profil"
+              width={300}
+              height={600}
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
+          <div className="carousel-card">
+            <Image 
+              src="/capture6.png"
+              alt="Interface DareHive - Défis"
               width={300}
               height={600}
               style={{ objectFit: 'contain' }}
@@ -136,14 +163,14 @@ export default function Home() {
               marginBottom: '16px',
               color: 'var(--text-primary)'
             }}>
-              Système de Classement
+              Système de Classement & Récompenses
             </h3>
             <p style={{ 
               color: 'var(--text-secondary)', 
               fontSize: '1rem',
               lineHeight: '1.6'
             }}>
-              Gagne des points XP, grimpe dans les ranks et devient une légende ! Chaque défi relevé te rapproche du sommet.
+              Gagne des points XP, grimpe dans les ranks et deviens une légende ! Les plus actifs reçoivent des badges exclusifs et à terme des bons cadeaux Amazon !
             </p>
           </div>
           
@@ -193,14 +220,14 @@ export default function Home() {
               marginBottom: '16px',
               color: 'var(--text-primary)'
             }}>
-              Défis Personnalisés
+              Défis Personnalisés (bientôt)
             </h3>
             <p style={{ 
               color: 'var(--text-secondary)', 
               fontSize: '1rem',
               lineHeight: '1.6'
             }}>
-              Algorithme intelligent qui s&apos;adapte à tes goûts ! Reçois des défis sur mesure qui correspondent à ta personnalité.
+              Algorithme intelligent en développement qui s&apos;adaptera à tes goûts ! Bientôt des défis sur mesure qui correspondent à ta personnalité.
             </p>
           </div>
           
@@ -212,14 +239,14 @@ export default function Home() {
               marginBottom: '16px',
               color: 'var(--text-primary)'
             }}>
-              Récompenses Exclusives
+              Récompenses Amazon
             </h3>
             <p style={{ 
               color: 'var(--text-secondary)', 
               fontSize: '1rem',
               lineHeight: '1.6'
             }}>
-              Débloque des badges rares, des titres prestigieux et des récompenses exclusives en relevant nos défis les plus épiques !
+              Débloque des badges rares, des titres prestigieux et bientôt des bons cadeaux Amazon pour les meilleurs créateurs !
             </p>
           </div>
         </div>
@@ -235,17 +262,26 @@ export default function Home() {
         borderRadius: '30px',
         border: '1px solid var(--glass-border)'
       }}>
-        <h2 style={{
-          fontSize: 'clamp(2rem, 4vw, 3rem)',
-          fontWeight: '800',
-          marginBottom: '24px',
-          background: 'linear-gradient(135deg, var(--text-primary), var(--accent-light))',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text'
-        }}>
-          🐝 Prêt à rejoindre la ruche ?
-        </h2>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px', marginBottom: '24px' }}>
+          <Image 
+            src="/LogoRaph.png" 
+            alt="Logo DareHive" 
+            width={50} 
+            height={50} 
+            style={{ borderRadius: '10px' }}
+          />
+          <h2 style={{
+            fontSize: 'clamp(2rem, 4vw, 3rem)',
+            fontWeight: '800',
+            margin: 0,
+            background: 'linear-gradient(135deg, var(--text-primary), var(--accent-light))',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text'
+          }}>
+            Prêt à rejoindre la ruche ?
+          </h2>
+        </div>
         <p style={{
           fontSize: 'clamp(1.1rem, 2.5vw, 1.3rem)',
           color: 'var(--text-secondary)',
@@ -279,7 +315,7 @@ export default function Home() {
             fontSize: '0.9rem',
             margin: 0
           }}>
-            ⚡ Version Android en développement - Rejoins notre liste d&apos;attente !
+            ⚡ Version Android en développement - Rejoins notre liste d&apos;attente pour les futures récompenses Amazon !
           </p>
         </div>
       </section>

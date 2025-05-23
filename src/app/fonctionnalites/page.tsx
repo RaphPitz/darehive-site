@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Navbar from '../../components/Navbar';
 // import Footer from '../../components/Footer';
 
@@ -16,9 +17,18 @@ export default function Fonctionnalites() {
       {/* Hero Section */}
       <section className="hero-section">
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h1 className="hero-title">
-            ⚡ Fonctionnalités DareHive
-          </h1>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px', marginBottom: '24px' }}>
+            <Image 
+              src="/LogoRaph.png" 
+              alt="Logo DareHive" 
+              width={50} 
+              height={50} 
+              style={{ borderRadius: '10px' }}
+            />
+            <h1 className="hero-title" style={{ margin: 0 }}>
+              ⚡ Fonctionnalités DareHive
+            </h1>
+          </div>
           <h2 className="hero-subtitle">
             Découvre toute la puissance de l&apos;app de défis vidéo nouvelle génération
           </h2>
@@ -54,8 +64,8 @@ export default function Fonctionnalites() {
                   listStyle: 'none',
                   padding: 0
                 }}>
-                  <li style={{ marginBottom: '12px' }}>✨ Filtres et effets en temps réel</li>
-                  <li style={{ marginBottom: '12px' }}>🎵 Bibliothèque musicale intégrée</li>
+                  <li style={{ marginBottom: '12px' }}>✨ Filtres et effets en temps réel (en cours de dev)</li>
+                  <li style={{ marginBottom: '12px' }}>🎵 Bibliothèque musicale intégrée (en cours de dev)</li>
                   <li style={{ marginBottom: '12px' }}>📱 Montage simplifié en un clic</li>
                   <li style={{ marginBottom: '12px' }}>🌟 Templates de défis prêts à l&apos;emploi</li>
                 </ul>
@@ -149,7 +159,7 @@ export default function Fonctionnalites() {
                   marginBottom: '24px',
                   color: 'var(--text-primary)'
                 }}>
-                  🏆 Système de Progression Avancé
+                  🏆 Système de Progression & Récompenses Amazon
                 </h2>
                 <p style={{ 
                   fontSize: '1.1rem', 
@@ -157,7 +167,7 @@ export default function Fonctionnalites() {
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
-                  Monte dans les rangs, débloque des récompenses exclusives et deviens une légende de DareHive !
+                  Monte dans les rangs, débloque des récompenses exclusives et deviens une légende de DareHive ! Classements mensuels avec remise à zéro.
                 </p>
                 <ul style={{ 
                   color: 'var(--text-secondary)', 
@@ -168,8 +178,10 @@ export default function Fonctionnalites() {
                 }}>
                   <li style={{ marginBottom: '12px' }}>💎 Badges rares et titres prestigieux</li>
                   <li style={{ marginBottom: '12px' }}>⚡ Points XP et niveaux de progression</li>
-                  <li style={{ marginBottom: '12px' }}>🎯 Défis quotidiens et hebdomadaires</li>
-                  <li style={{ marginBottom: '12px' }}>👑 Classements globaux et locaux</li>
+                  <li style={{ marginBottom: '12px' }}>🎯 Défis quotidiens disponibles</li>
+                  <li style={{ marginBottom: '12px' }}>📅 Défis hebdomadaires (bientôt disponibles)</li>
+                  <li style={{ marginBottom: '12px' }}>🗓️ Classement mensuel avec remise à zéro</li>
+                  <li style={{ marginBottom: '12px' }}>🎁 Bons cadeaux Amazon pour les plus actifs</li>
                 </ul>
               </div>
               <div style={{ textAlign: 'center' }}>
@@ -221,7 +233,7 @@ export default function Fonctionnalites() {
                   marginBottom: '24px',
                   color: 'var(--text-primary)'
                 }}>
-                  🧠 Intelligence Artificielle Avancée
+                  🧠 Intelligence Artificielle Avancée (en développement)
                 </h2>
                 <p style={{ 
                   fontSize: '1.1rem', 
@@ -229,7 +241,7 @@ export default function Fonctionnalites() {
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
-                  Notre IA s&apos;adapte à tes préférences pour te proposer l&apos;expérience la plus personnalisée possible.
+                  Notre IA est en cours de développement pour s&apos;adapter à tes préférences et te proposer l&apos;expérience la plus personnalisée possible.
                 </p>
                 <ul style={{ 
                   color: 'var(--text-secondary)', 
@@ -238,10 +250,10 @@ export default function Fonctionnalites() {
                   listStyle: 'none',
                   padding: 0
                 }}>
-                  <li style={{ marginBottom: '12px' }}>🎯 Défis personnalisés selon tes goûts</li>
+                  <li style={{ marginBottom: '12px' }}>🎯 Défis personnalisés selon tes goûts (bientôt)</li>
                   <li style={{ marginBottom: '12px' }}>📊 Analyse de performance en temps réel</li>
-                  <li style={{ marginBottom: '12px' }}>🔮 Prédiction de contenu viral</li>
-                  <li style={{ marginBottom: '12px' }}>🎨 Suggestions créatives automatiques</li>
+                  <li style={{ marginBottom: '12px' }}>🔮 Prédiction de contenu viral (en développement)</li>
+                  <li style={{ marginBottom: '12px' }}>🎨 Suggestions créatives automatiques (bientôt)</li>
                 </ul>
               </div>
             </div>
@@ -270,7 +282,7 @@ export default function Fonctionnalites() {
               fontSize: '0.9rem',
               lineHeight: '1.6'
             }}>
-              Architecture optimisée pour un chargement instantané et une navigation fluide.
+              Architecture optimisée pour un chargement instantané et une navigation fluide. On travaille tous les jours à optimiser l&apos;expérience.
             </p>
           </div>
           
@@ -351,21 +363,21 @@ export default function Fonctionnalites() {
           </div>
           
           <div className="feature-card">
-            <div className="feature-icon">🎨</div>
+            <div className="feature-icon">🎁</div>
             <h3 style={{ 
               fontSize: '1.3rem', 
               fontWeight: '600', 
               marginBottom: '16px',
               color: 'var(--text-primary)'
             }}>
-              Outils Créatifs Avancés
+              Récompenses Amazon
             </h3>
             <p style={{ 
               color: 'var(--text-secondary)', 
               fontSize: '0.9rem',
               lineHeight: '1.6'
             }}>
-              Suite complète d&apos;outils pour exprimer ta créativité sans limites.
+              Les créateurs les plus actifs et talentueux reçoivent des bons cadeaux Amazon !
             </p>
           </div>
         </div>
@@ -381,17 +393,26 @@ export default function Fonctionnalites() {
         borderRadius: '30px',
         border: '1px solid var(--glass-border)'
       }}>
-        <h2 style={{
-          fontSize: 'clamp(2rem, 4vw, 3rem)',
-          fontWeight: '800',
-          marginBottom: '24px',
-          background: 'linear-gradient(135deg, var(--text-primary), var(--accent-light))',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text'
-        }}>
-          🚀 Prêt pour l&apos;aventure ?
-        </h2>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px', marginBottom: '24px' }}>
+          <Image 
+            src="/LogoRaph.png" 
+            alt="Logo DareHive" 
+            width={50} 
+            height={50} 
+            style={{ borderRadius: '10px' }}
+          />
+          <h2 style={{
+            fontSize: 'clamp(2rem, 4vw, 3rem)',
+            fontWeight: '800',
+            margin: 0,
+            background: 'linear-gradient(135deg, var(--text-primary), var(--accent-light))',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text'
+          }}>
+            🚀 Prêt pour l&apos;aventure ?
+          </h2>
+        </div>
         <p style={{
           fontSize: 'clamp(1.1rem, 2.5vw, 1.3rem)',
           color: 'var(--text-secondary)',
@@ -399,7 +420,7 @@ export default function Fonctionnalites() {
           margin: '0 auto 50px',
           lineHeight: '1.6'
         }}>
-          Télécharge DareHive maintenant et découvre toutes ces fonctionnalités révolutionnaires !
+          Télécharge DareHive maintenant et découvre toutes ces fonctionnalités révolutionnaires ! Les plus actifs recevront bientôt des bons Amazon !
         </p>
         
         <div className="download-badges">
