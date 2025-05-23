@@ -1,0 +1,215 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "contact": "Contact",
+    "terms": "CGU",
+    "privacy": "Confidentialité",
+    "download": "Télécharger",
+    "language": "Langue"
+  },
+  "home": {
+    "title": "DAREHIVE",
+    "subtitle": "La révolution des défis vidéo arrive ! Rejoins la ruche, crée du contenu viral et grimpe au sommet du classement !",
+    "screenshotsTitle": "📱 Découvre l'Expérience DareHive",
+    "featuresTitle": "⚡ Fonctionnalités Next-Gen",
+    "ctaTitle": "Prêt à rejoindre la ruche ?",
+    "ctaSubtitle": "Télécharge DareHive maintenant et commence ton aventure dans l'univers le plus fun des défis vidéo !",
+    "comingSoon": "BIENTÔT",
+    "androidNote": "⚡ Version Android en développement - Rejoins notre liste d'attente pour les futures récompenses Amazon !",
+    "features": {
+      "videoChallenges": {
+        "title": "Défis Vidéo Immersifs",
+        "description": "Relève des défis créatifs, filme tes réactions les plus authentiques et partage ton talent avec la communauté DareHive !"
+      },
+      "ranking": {
+        "title": "Système de Classement & Récompenses",
+        "description": "Gagne des points XP, grimpe dans les ranks et deviens une légende ! Les plus actifs reçoivent des badges exclusifs et très bientôt des bons cadeaux Amazon !"
+      },
+      "viral": {
+        "title": "Contenu Viral",
+        "description": "Deviens viral ! Nos défis sont conçus pour générer du contenu authentique et engageant qui cartonne sur les réseaux."
+      },
+      "community": {
+        "title": "Communauté Active",
+        "description": "Rejoins une communauté de créateurs passionnés ! Découvre, like et partage les meilleures vidéos de la ruche."
+      },
+      "aiChallenges": {
+        "title": "Défis Personnalisés (bientôt)",
+        "description": "Algorithme intelligent en développement qui s'adaptera à tes goûts ! Bientôt des défis sur mesure qui correspondent à ta personnalité."
+      },
+      "amazonRewards": {
+        "title": "Récompenses Amazon (très bientôt)",
+        "description": "Débloque des badges rares, des titres prestigieux et très bientôt des bons cadeaux Amazon pour les meilleurs créateurs !"
+      }
+    }
+  },
+  "features": {
+    "title": "⚡ Fonctionnalités DareHive",
+    "subtitle": "Découvre toute la puissance de l'app de défis vidéo nouvelle génération",
+    "studio": {
+      "title": "🎬 Studio de Création Intégré",
+      "description": "Interface intuitive inspirée de TikTok pour filmer, éditer et partager tes défis en quelques secondes.",
+      "items": [
+        "✨ Filtres et effets en temps réel (en cours de dev)",
+        "🎵 Bibliothèque musicale intégrée (en cours de dev)",
+        "📱 Montage simplifié en un clic",
+        "🌟 Templates de défis prêts à l'emploi"
+      ]
+    },
+    "social": {
+      "title": "🚀 Feed Social Intelligent",
+      "description": "Algorithme avancé qui te propose le contenu le plus engageant de la communauté DareHive.",
+      "items": [
+        "❤️ Système de likes et commentaires",
+        "🔄 Partage vers tous les réseaux",
+        "👥 Suivre tes créateurs préférés",
+        "🔥 Découverte de tendances virales"
+      ]
+    },
+    "gamification": {
+      "title": "🏆 Système de Progression & Récompenses Amazon",
+      "description": "Monte dans les rangs, débloque des récompenses exclusives et deviens une légende de DareHive ! Classements mensuels avec remise à zéro.",
+      "items": [
+        "💎 Badges rares et titres prestigieux",
+        "⚡ Points XP et niveaux de progression",
+        "🎯 Défis quotidiens disponibles",
+        "📅 Défis hebdomadaires (bientôt disponibles)",
+        "🗓️ Classement mensuel avec remise à zéro",
+        "🎁 Bons cadeaux Amazon (très bientôt disponibles)"
+      ]
+    },
+    "ai": {
+      "title": "🧠 Intelligence Artificielle Avancée (en développement)",
+      "description": "Notre IA est en cours de développement pour s'adapter à tes préférences et te proposer l'expérience la plus personnalisée possible.",
+      "items": [
+        "🎯 Défis personnalisés selon tes goûts (bientôt)",
+        "📊 Analyse de performance en temps réel",
+        "🔮 Prédiction de contenu viral (en développement)",
+        "🎨 Suggestions créatives automatiques (bientôt)"
+      ]
+    },
+    "technical": {
+      "title": "🔧 Fonctionnalités Techniques",
+      "performance": {
+        "title": "Performance Ultra-Rapide",
+        "description": "Architecture optimisée pour un chargement instantané et une navigation fluide. On travaille tous les jours à optimiser l'expérience."
+      },
+      "security": {
+        "title": "Sécurité Renforcée",
+        "description": "Chiffrement end-to-end et protection avancée de tes données personnelles."
+      },
+      "native": {
+        "title": "Interface Native iOS",
+        "description": "Design parfaitement intégré aux standards Apple pour une expérience premium."
+      },
+      "cloud": {
+        "title": "Synchronisation Cloud",
+        "description": "Tes créations sauvegardées automatiquement et accessibles partout."
+      },
+      "community": {
+        "title": "Communauté Mondiale",
+        "description": "Connecte-toi avec des créateurs du monde entier et découvre de nouveaux talents."
+      },
+      "rewards": {
+        "title": "Récompenses Amazon (très bientôt)",
+        "description": "Les créateurs les plus actifs et talentueux recevront très bientôt des bons cadeaux Amazon !"
+      }
+    },
+    "ctaTitle": "🚀 Prêt pour l'aventure ?",
+    "ctaSubtitle": "Télécharge DareHive maintenant et découvre toutes ces fonctionnalités révolutionnaires ! Les plus actifs recevront très bientôt des bons Amazon !"
+  },
+  "contact": {
+    "title": "📞 Contacte-nous",
+    "subtitle": "Une question, une suggestion ou besoin d'aide ? On est là pour toi !",
+    "form": {
+      "title": "💬 Envoie-nous un message",
+      "name": "Nom complet",
+      "namePlaceholder": "Ton nom complet",
+      "email": "Email",
+      "emailPlaceholder": "ton.email@exemple.com",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Choisis un sujet",
+      "subjects": {
+        "bug": "🐛 Signaler un bug",
+        "feature": "💡 Suggestion d'amélioration",
+        "support": "🆘 Aide technique",
+        "partnership": "🤝 Partenariat",
+        "amazon": "🎁 Info récompenses Amazon",
+        "other": "💬 Autre"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Raconte-nous tout ! Plus tu donnes de détails, mieux on pourra t'aider 😊",
+      "send": "🚀 Envoyer le message"
+    },
+    "direct": {
+      "title": "📧 Contacts Directs",
+      "support": "Email Support",
+      "team": "Équipe DareHive",
+      "partnerships": "Partenariats"
+    },
+    "social": {
+      "title": "🌟 Retrouve-nous"
+    },
+    "faq": {
+      "title": "❓ Questions Fréquentes",
+      "response": {
+        "title": "🕒 Temps de réponse moyen ?",
+        "answer": "On répond généralement dans les 24h ! Pour les urgences, utilise l'email support prioritaire."
+      },
+      "amazon": {
+        "title": "🎁 Comment recevoir des bons Amazon ?",
+        "answer": "Les créateurs les plus actifs et qui accumulent le plus de points recevront très bientôt des récompenses spéciales ! Reste connecté pour ne rien manquer."
+      },
+      "bug": {
+        "title": "🐛 Comment signaler un bug ?",
+        "answer": "Utilise le formulaire ci-dessus en sélectionnant \"Signaler un bug\". N'oublie pas de décrire les étapes pour reproduire le problème !"
+      },
+      "feature": {
+        "title": "💡 Proposer une nouvelle fonctionnalité ?",
+        "answer": "On adore les bonnes idées ! Envoie-nous ta suggestion détaillée, on étudie chaque proposition avec attention."
+      }
+    }
+  },
+  "footer": {
+    "description": "La révolution des défis vidéo est en marche ! Rejoins la ruche et deviens viral pour gagner des récompenses Amazon.",
+    "navigation": "🧭 Navigation",
+    "legal": "⚖️ Légal",
+    "stayConnected": "💌 Restons connectés",
+    "status": "🚀 Version iOS disponible !\\n📱 Android en développement\\n🎁 Récompenses Amazon pour les plus actifs",
+    "copyright": "Créé avec passion pour la communauté des créateurs"
+  },
+  "terms": {
+    "title": "📋 Conditions Générales d'Utilisation",
+    "subtitle": "Les règles du jeu pour une expérience DareHive au top !",
+    "lastUpdate": "Dernière mise à jour",
+    "ctaTitle": "✅ Tout compris ?",
+    "ctaSubtitle": "Ces conditions sont là pour que tout le monde s'amuse en toute sécurité sur DareHive !"
+  },
+  "privacy": {
+    "title": "🔒 Politique de Confidentialité",
+    "subtitle": "Tes données sont précieuses, on les protège comme un trésor !",
+    "lastUpdate": "Dernière mise à jour",
+    "transparency": {
+      "title": "🌟 Transparence Totale",
+      "encryption": {
+        "title": "Chiffrement End-to-End",
+        "description": "Tes messages privés et données sensibles sont chiffrés avec les mêmes technologies que les banques."
+      },
+      "noSelling": {
+        "title": "Zéro Vente de Données",
+        "description": "Tes données ne sont jamais vendues à des tiers. Notre modèle économique repose sur des fonctionnalités premium."
+      },
+      "instantDeletion": {
+        "title": "Suppression Instantanée",
+        "description": "Tu peux supprimer ton compte et toutes tes données en un clic. Suppression effective sous 24h maximum."
+      }
+    },
+    "ctaTitle": "🔐 Tes données, tes règles !",
+    "ctaSubtitle": "Rejoins DareHive en toute confiance, ta vie privée est entre de bonnes mains."
+  },
+  "common": {
+    "appStore": "Télécharger sur l'App Store",
+    "comingSoon": "Bientôt sur Google Play"
+  }
+} 

@@ -2,9 +2,12 @@
 
 import Image from 'next/image';
 import Navbar from '../../components/Navbar';
+import { useLanguage } from '../../contexts/LanguageContext';
 // import Footer from '../../components/Footer';
 
 export default function Fonctionnalites() {
+  const { t } = useLanguage();
+  
   return (
     <main style={{ 
       flex: 1, 
@@ -26,7 +29,7 @@ export default function Fonctionnalites() {
               style={{ borderRadius: '10px' }}
             />
             <h1 className="hero-title" style={{ margin: 0 }}>
-              ⚡ Fonctionnalités DareHive
+              {t('features.title')}
             </h1>
           </div>
           <h2 className="hero-subtitle">

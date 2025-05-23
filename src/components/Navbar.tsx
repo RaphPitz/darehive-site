@@ -1,7 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useLanguage } from '../contexts/LanguageContext';
+import LanguageSelector from './LanguageSelector';
 
 export default function Navbar() {
+  const { t } = useLanguage();
+
   return (
     <nav className="topbar">
       <div style={{ 
@@ -70,6 +74,7 @@ export default function Navbar() {
               transition: 'all 0.3s ease',
               whiteSpace: 'nowrap'
             }}
+            title={t('nav.features')}
           >
             ⚡
           </Link>
@@ -85,6 +90,7 @@ export default function Navbar() {
               transition: 'all 0.3s ease',
               whiteSpace: 'nowrap'
             }}
+            title={t('nav.contact')}
           >
             📞
           </Link>
@@ -100,6 +106,7 @@ export default function Navbar() {
               transition: 'all 0.3s ease',
               whiteSpace: 'nowrap'
             }}
+            title={t('nav.terms')}
           >
             📋
           </Link>
@@ -115,10 +122,14 @@ export default function Navbar() {
               transition: 'all 0.3s ease',
               whiteSpace: 'nowrap'
             }}
+            title={t('nav.privacy')}
           >
             🔒
           </Link>
         </div>
+
+        {/* Sélecteur de langue */}
+        <LanguageSelector />
 
         {/* Bouton de Téléchargement */}
         <a 
@@ -138,7 +149,7 @@ export default function Navbar() {
           }}
         >
           <span style={{ fontSize: 'clamp(0.9rem, 2vw, 1.2rem)' }}>📱</span>
-          <span className="download-text">Télécharger</span>
+          <span className="download-text">{t('nav.download')}</span>
         </a>
       </div>
     </nav>

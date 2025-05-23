@@ -3,8 +3,10 @@
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import { useRef } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Home() {
+  const { t } = useLanguage();
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const scrollCarousel = (direction: 'left' | 'right') => {
@@ -38,31 +40,30 @@ export default function Home() {
               style={{ borderRadius: '12px' }}
             />
             <h1 className="hero-title" style={{ margin: 0 }}>
-              DAREHIVE
+              {t('home.title')}
             </h1>
           </div>
           <h2 className="hero-subtitle">
-            La révolution des défis vidéo arrive ! 
-            Rejoins la ruche, crée du contenu viral et grimpe au sommet du classement !
+            {t('home.subtitle')}
           </h2>
           
           <div className="download-badges">
             <a href="https://apps.apple.com/app/darehive/id6478155193" target="_blank" rel="noopener noreferrer">
               <img 
                 src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
-                alt="Télécharger sur l'App Store"
+                alt={t('common.appStore')}
                 className="download-badge"
               />
             </a>
             <div style={{ position: 'relative' }}>
-              <img 
+                            <img 
                 src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
-                alt="Bientôt sur Google Play"
+                alt={t('common.comingSoon')}
                 className="download-badge"
                 style={{ opacity: 0.5, filter: 'grayscale(100%)' }}
               />
-              <div style={{
-                position: 'absolute',
+      <div style={{
+        position: 'absolute',
                 top: '50%',
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
@@ -75,7 +76,7 @@ export default function Home() {
                 backdropFilter: 'blur(10px)',
                 border: '1px solid var(--glass-border)'
               }}>
-                BIENTÔT
+                {t('home.comingSoon')}
               </div>
             </div>
           </div>
@@ -85,7 +86,7 @@ export default function Home() {
       {/* Section Carousel Screenshots */}
       <section style={{ padding: '60px 0' }}>
         <h2 className="section-title">
-          📱 Découvre l&apos;Expérience DareHive
+          {t('home.screenshotsTitle')}
         </h2>
         <div style={{ position: 'relative', maxWidth: '1200px', margin: '0 auto' }}>
           {/* Bouton Précédent */}
@@ -215,7 +216,7 @@ export default function Home() {
       {/* Section Fonctionnalités Premium */}
       <section style={{ padding: '80px 0' }}>
         <h2 className="section-title">
-          ⚡ Fonctionnalités Next-Gen
+          {t('home.featuresTitle')}
         </h2>
         <div className="feature-grid">
           <div className="feature-card">
@@ -226,14 +227,14 @@ export default function Home() {
               marginBottom: '16px',
               color: 'var(--text-primary)'
             }}>
-              Défis Vidéo Immersifs
+              {t('home.features.videoChallenges.title')}
             </h3>
             <p style={{ 
               color: 'var(--text-secondary)', 
               fontSize: '1rem',
               lineHeight: '1.6'
             }}>
-              Relève des défis créatifs, filme tes réactions les plus authentiques et partage ton talent avec la communauté DareHive !
+              {t('home.features.videoChallenges.description')}
             </p>
           </div>
           

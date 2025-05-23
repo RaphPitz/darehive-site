@@ -2,10 +2,13 @@
 
 import Image from 'next/image';
 import Navbar from '../../components/Navbar';
+import { useLanguage } from '../../contexts/LanguageContext';
 // import Footer from '../../components/Footer';
 
-export default function Contact() {
-  return (
+  export default function Contact() {
+    const { t } = useLanguage();
+    
+    return (
     <main style={{ 
       flex: 1, 
       minHeight: '100vh',
@@ -26,7 +29,7 @@ export default function Contact() {
               style={{ borderRadius: '10px' }}
             />
             <h1 className="hero-title" style={{ margin: 0 }}>
-              📞 Contacte-nous
+              {t('contact.title')}
             </h1>
           </div>
           <h2 className="hero-subtitle">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from '../components/Footer';
+import { LanguageProvider } from '../contexts/LanguageContext';
 
 export const metadata: Metadata = {
   title: "DareHive - Défis Vidéo Nouvelle Génération",
@@ -18,10 +19,12 @@ export default function RootLayout({
         className={"antialiased"}
         style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}
       >
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-          {children}
-        </div>
-        <Footer />
+        <LanguageProvider>
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+            {children}
+          </div>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );
