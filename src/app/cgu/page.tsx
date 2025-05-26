@@ -148,8 +148,8 @@ export default function CGU() {
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
                   Pour toute question concernant ces CGU : 
-                  <a href="mailto:legal@darehive.app" style={{ color: 'var(--accent-light)', textDecoration: 'none' }}>
-                    legal@darehive.app
+                  <a href="mailto:contact@darehive.app" style={{ color: 'var(--accent-light)', textDecoration: 'none' }}>
+                    contact@darehive.app
                   </a>
                 </p>
               </div>
@@ -261,8 +261,8 @@ export default function CGU() {
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
                   For any questions regarding these ToS: 
-                  <a href="mailto:legal@darehive.app" style={{ color: 'var(--accent-light)', textDecoration: 'none' }}>
-                    legal@darehive.app
+                  <a href="mailto:contact@darehive.app" style={{ color: 'var(--accent-light)', textDecoration: 'none' }}>
+                    contact@darehive.app
                   </a>
                 </p>
               </div>

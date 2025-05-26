@@ -219,7 +219,7 @@ import { useLanguage } from '../../contexts/LanguageContext';
                   </a>
                   
                   <a 
-                    href="mailto:team@darehive.app" 
+                    href="mailto:contact@darehive.app" 
                     style={{
                       display: 'flex',
                       alignItems: 'center',
@@ -235,13 +235,13 @@ import { useLanguage } from '../../contexts/LanguageContext';
                   >
                     <span style={{ fontSize: '2rem' }}>👥</span>
                     <div>
-                      <div style={{ fontWeight: '600', fontSize: '1.1rem' }}>Équipe DareHive</div>
-                      <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>team@darehive.app</div>
+                      <div style={{ fontWeight: '600', fontSize: '1.1rem' }}>Équipe DAREHIVE</div>
+                      <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>contact@darehive.app</div>
                     </div>
                   </a>
                   
                   <a 
-                    href="mailto:partnerships@darehive.app" 
+                    href="mailto:contact@darehive.app" 
                     style={{
                       display: 'flex',
                       alignItems: 'center',
@@ -258,7 +258,7 @@ import { useLanguage } from '../../contexts/LanguageContext';
                     <span style={{ fontSize: '2rem' }}>🤝</span>
                     <div>
                       <div style={{ fontWeight: '600', fontSize: '1.1rem' }}>Partenariats</div>
-                      <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>partnerships@darehive.app</div>
+                      <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>contact@darehive.app</div>
                     </div>
                   </a>
                 </div>
