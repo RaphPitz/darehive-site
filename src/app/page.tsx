@@ -85,8 +85,8 @@ export default function Home() {
 
       {/* Section Carousel Screenshots */}
       <section style={{ padding: '60px 0' }}>
-        <h2 className="section-title">
-          {t('home.screenshotsTitle')}
+        <h2 className="section-title darehive-text">
+          {t('home.screenshotsTitle').toUpperCase()}
         </h2>
         <div style={{ position: 'relative', maxWidth: '1200px', margin: '0 auto' }}>
           {/* Bouton Précédent */}
@@ -417,7 +417,7 @@ export default function Home() {
           margin: '0 auto 50px',
           lineHeight: '1.6'
         }}>
-          Télécharge DareHive maintenant et commence ton aventure dans l&apos;univers le plus fun des défis vidéo !
+          Télécharge <span className="darehive-text">DareHive</span> maintenant et commence ton aventure dans l&apos;univers le plus fun des défis vidéo !
         </p>
         
         <div className="download-badges">

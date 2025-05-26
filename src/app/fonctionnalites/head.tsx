@@ -1,8 +1,8 @@
   export default function Head() {
     return (
       <>
-        <title>Fonctionnalités – DareHive</title>
-        <meta name="description" content="Découvre toutes les fonctionnalités premium de DareHive, l’app de défis vidéo nouvelle génération." />
+        <title>Fonctionnalités – <span className='darehive-text'>DAREHIVE</span></title>
+        <meta name="description" content="Découvre toutes les fonctionnalités premium de DAREHIVE, l'app de défis vidéo nouvelle génération." />
       </>
     );
   }

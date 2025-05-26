@@ -28,8 +28,8 @@ export default function Fonctionnalites() {
               height={50} 
               style={{ borderRadius: '10px' }}
             />
-            <h1 className="hero-title" style={{ margin: 0 }}>
-              {t('features.title')}
+            <h1 className="hero-title">
+              ⚡ Fonctionnalités <span className="darehive-text">DAREHIVE</span>
             </h1>
           </div>
           <h2 className="hero-subtitle">

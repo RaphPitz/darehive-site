@@ -17,7 +17,7 @@ export default function CGU() {
       <section className="hero-section">
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h1 className="hero-title">
-            📋 Conditions Générales d&apos;Utilisation
+            📋 Conditions Générales d&apos;Utilisation <span className="darehive-text">DAREHIVE</span>
           </h1>
           <h2 className="hero-subtitle">
             Les règles du jeu pour une expérience DareHive au top ! 
@@ -67,7 +67,7 @@ export default function CGU() {
                 color: 'var(--text-primary)',
                 marginTop: '40px'
               }}>
-                📱 Conditions d&apos;Utilisation DareHive
+                📱 Conditions d&apos;Utilisation <span className="darehive-text">DAREHIVE</span>
               </h2>
               
               <div style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.7' }}>
