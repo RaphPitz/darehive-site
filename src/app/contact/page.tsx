@@ -278,7 +278,7 @@ import { useLanguage } from '../../contexts/LanguageContext';
                 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                   <a 
-                    href="https://instagram.com/darehive.app" 
+                    href="https://www.instagram.com/darehive?igsh=bzJ2b2wyYzQyNXZ3&utm_source=qr" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     style={{
@@ -301,7 +301,7 @@ import { useLanguage } from '../../contexts/LanguageContext';
                   </a>
                   
                   <a 
-                    href="https://tiktok.com/@darehive.app" 
+                    href="https://www.tiktok.com/@darehive?_t=ZN-8wg565fJvr4&_r=1" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     style={{
@@ -324,7 +324,7 @@ import { useLanguage } from '../../contexts/LanguageContext';
                   </a>
                   
                   <a 
-                    href="https://twitter.com/darehive_app" 
+                    href="https://x.com/darehive?s=21" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     style={{
