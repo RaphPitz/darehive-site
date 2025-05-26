@@ -6,8 +6,6 @@ import { useLanguage } from '../../contexts/LanguageContext';
 // import Footer from '../../components/Footer';
 
 export default function Fonctionnalites() {
-  const { t } = useLanguage();
-  
   return (
     <main style={{ 
       flex: 1, 
