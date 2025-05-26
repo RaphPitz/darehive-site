@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import Navbar from '../../components/Navbar';
-import { useLanguage } from '../../contexts/LanguageContext';
 // import Footer from '../../components/Footer';
 
 export default function Fonctionnalites() {
