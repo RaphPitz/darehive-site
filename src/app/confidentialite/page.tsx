@@ -17,7 +17,7 @@ export default function Confidentialite() {
       <section className="hero-section">
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h1 className="hero-title">
-            🔒 Politique de Confidentialité
+            🛡️ Politique de Confidentialité <span className="darehive-text">DAREHIVE</span>
           </h1>
           <h2 className="hero-subtitle">
             Tes données sont précieuses, on les protège comme un trésor !
@@ -67,7 +67,7 @@ export default function Confidentialite() {
                 color: 'var(--text-primary)',
                 marginTop: '40px'
               }}>
-                🛡️ Politique de Confidentialité DareHive
+                🛡️ <span className="darehive-text">DAREHIVE</span> Privacy Policy
               </h2>
               
               <div style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.7' }}>

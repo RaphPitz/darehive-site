@@ -127,7 +127,7 @@ export default function Fonctionnalites() {
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
-                  Algorithme avancé qui te propose le contenu le plus engageant de la communauté DareHive.
+                  Algorithme avancé qui te propose le contenu le plus engageant de la communauté <span className="darehive-text">DAREHIVE</span>.
                 </p>
                 <ul style={{ 
                   color: 'var(--text-secondary)', 
@@ -167,7 +167,7 @@ export default function Fonctionnalites() {
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
-                  Monte dans les rangs, débloque des récompenses exclusives et deviens une légende de DareHive ! Classements mensuels avec remise à zéro.
+                  Monte dans les rangs, débloque des récompenses exclusives et deviens une légende de <span className="darehive-text">DAREHIVE</span> ! Classements mensuels avec remise à zéro.
                 </p>
                 <ul style={{ 
                   color: 'var(--text-secondary)', 
@@ -420,7 +420,7 @@ export default function Fonctionnalites() {
           margin: '0 auto 50px',
           lineHeight: '1.6'
         }}>
-          Télécharge DareHive maintenant et découvre toutes ces fonctionnalités révolutionnaires ! Les plus actifs recevront bientôt des bons Amazon !
+          Télécharge <span className="darehive-text">DAREHIVE</span> maintenant et découvre toutes ces fonctionnalités révolutionnaires ! Les plus actifs recevront bientôt des bons Amazon !
         </p>
         
         <div className="download-badges">

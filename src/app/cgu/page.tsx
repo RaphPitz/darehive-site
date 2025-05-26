@@ -20,7 +20,7 @@ export default function CGU() {
             📋 Conditions Générales d&apos;Utilisation <span className="darehive-text">DAREHIVE</span>
           </h1>
           <h2 className="hero-subtitle">
-            Les règles du jeu pour une expérience DareHive au top ! 
+            Les règles du jeu pour une expérience <span className="darehive-text">DAREHIVE</span> au top !
           </h2>
           <p style={{ 
             color: 'var(--text-secondary)', 
@@ -75,20 +75,20 @@ export default function CGU() {
                   🎯 1. Objet des CGU
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
-                  Les présentes Conditions Générales d&apos;Utilisation (CGU) régissent l&apos;utilisation de l&apos;application mobile DareHive, 
-                  plateforme innovante de défis vidéo qui révolutionne le divertissement mobile.
+                  Les présentes Conditions Générales d&apos;Utilisation (CGU) régissent l&apos;utilisation de l&apos;application mobile <span className="darehive-text">DAREHIVE</span>,
+                  développée par notre équipe passionnée.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  En utilisant DareHive, tu acceptes intégralement ces conditions. L&apos;app est conçue pour être fun, 
-                  sécurisée et respectueuse de tous les utilisateurs.
+                  En utilisant <span className="darehive-text">DAREHIVE</span>, tu acceptes intégralement ces conditions. L&apos;app est conçue pour être fun,
+                  créative et respectueuse de tous les utilisateurs.
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
                   👤 2. Conditions d&apos;Accès
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
-                  <strong>Âge minimum :</strong> Tu dois avoir au moins 13 ans pour utiliser DareHive. 
-                  Les mineurs de moins de 16 ans doivent obtenir l&apos;autorisation parentale.
+                  <strong>Âge minimum :</strong> Tu dois avoir au moins 13 ans pour utiliser <span className="darehive-text">DAREHIVE</span>.
+                  Si tu as moins de 18 ans, assure-toi d&apos;avoir l&apos;autorisation de tes parents.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
                   <strong>Compte utilisateur :</strong> Tu es responsable de la sécurité de ton compte et de tes identifiants. 
