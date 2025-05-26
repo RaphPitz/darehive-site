@@ -394,7 +394,7 @@ import { useLanguage } from '../../contexts/LanguageContext';
                 lineHeight: '1.6',
                 margin: 0
               }}>
-                Les créateurs les plus actifs et qui accumulent le plus de points reçoivent des récompenses spéciales ! Reste connecté pour ne rien manquer.
+                Cette fonctionnalité est en cours de mise en place ! Pour l&apos;instant, les créateurs les plus actifs gagnent des badges exceptionnels qui leur permettront de gagner plus de points lors des prochains classements. Reste connecté pour ne rien manquer !
               </p>
             </div>
             

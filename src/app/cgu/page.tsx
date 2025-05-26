@@ -110,6 +110,9 @@ export default function CGU() {
                   <strong>Droits d&apos;auteur :</strong> Respecte les droits de propriété intellectuelle. 
                   N&apos;utilise que de la musique libre de droits ou pour laquelle tu as les autorisations.
                 </p>
+                <p style={{ marginBottom: '20px' }}>
+                  <strong>Partage sur les réseaux sociaux :</strong> En publiant du contenu sur DareHive, tu acceptes que certaines vidéos puissent être partagées sur nos réseaux sociaux officiels (TikTok, Instagram, Twitter/X et YouTube) pour promouvoir la plateforme et mettre en avant les meilleurs créateurs.
+                </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
                   🏆 4. Système de Points et Classements
@@ -219,6 +222,9 @@ export default function CGU() {
                 <p style={{ marginBottom: '20px' }}>
                   <strong>Copyright:</strong> Respect intellectual property rights. 
                   Only use royalty-free music or music for which you have permissions.
+                </p>
+                <p style={{ marginBottom: '20px' }}>
+                  <strong>Social media sharing:</strong> By posting content on DareHive, you agree that certain videos may be shared on our official social networks (TikTok, Instagram, Twitter/X and YouTube) to promote the platform and highlight the best creators.
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>

@@ -45,7 +45,7 @@ export default function Navbar() {
             height={20} 
             style={{ borderRadius: '4px' }}
           />
-          <span>DareHive</span>
+          <span className="darehive-text">DAREHIVE</span>
         </Link>
 
         {/* Navigation Links - Version desktop */}

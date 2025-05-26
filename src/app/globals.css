@@ -1,6 +1,7 @@
 /* --- CSS ULTRA MODERNE PREMIUM VIOLET --- */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 :root {
   --primary-violet: #6366f1;
@@ -421,4 +422,11 @@ html, body {
     margin: 0 5px;
     padding: 20px 15px !important;
   }
+}
+
+/* Classe pour le style DAREHIVE */
+.darehive-text {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }

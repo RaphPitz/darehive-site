@@ -44,7 +44,7 @@ export default function Home() {
             </h1>
           </div>
           <h2 className="hero-subtitle">
-            {t('home.subtitle')}
+            La révolution des défis vidéo commence maintenant ! Rejoins la ruche, fais le buzz et décroche la première place !
           </h2>
           
           <div className="download-badges">
@@ -167,7 +167,7 @@ export default function Home() {
             <div className="carousel-card">
               <Image 
                 src="/capture1.png"
-                alt="Interface DareHive - Découverte"
+                alt="Capture 1"
                 width={300}
                 height={600}
                 style={{ objectFit: 'contain' }}
@@ -176,7 +176,7 @@ export default function Home() {
             <div className="carousel-card">
               <Image 
                 src="/capture2.png"
-                alt="Interface DareHive - Création"
+                alt="Capture 2"
                 width={300}
                 height={600}
                 style={{ objectFit: 'contain' }}
@@ -185,7 +185,7 @@ export default function Home() {
             <div className="carousel-card">
               <Image 
                 src="/capture3.png"
-                alt="Interface DareHive - Classement"
+                alt="Capture 3"
                 width={300}
                 height={600}
                 style={{ objectFit: 'contain' }}
@@ -194,7 +194,7 @@ export default function Home() {
             <div className="carousel-card">
               <Image 
                 src="/capture4.png"
-                alt="Interface DareHive - Social"
+                alt="Capture 4"
                 width={300}
                 height={600}
                 style={{ objectFit: 'contain' }}
@@ -203,7 +203,52 @@ export default function Home() {
             <div className="carousel-card">
               <Image 
                 src="/capture5.png"
-                alt="Interface DareHive - Profil"
+                alt="Capture 5"
+                width={300}
+                height={600}
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+            <div className="carousel-card">
+              <Image 
+                src="/capture6.png"
+                alt="Capture 6"
+                width={300}
+                height={600}
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+            <div className="carousel-card">
+              <Image 
+                src="/capture7.png"
+                alt="Capture 7"
+                width={300}
+                height={600}
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+            <div className="carousel-card">
+              <Image 
+                src="/capture8.png"
+                alt="Capture 8"
+                width={300}
+                height={600}
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+            <div className="carousel-card">
+              <Image 
+                src="/capture9.png"
+                alt="Capture 9"
+                width={300}
+                height={600}
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
+            <div className="carousel-card">
+              <Image 
+                src="/capture10.png"
+                alt="Capture 10"
                 width={300}
                 height={600}
                 style={{ objectFit: 'contain' }}
@@ -398,7 +443,7 @@ export default function Home() {
             fontSize: '0.9rem',
             margin: 0
           }}>
-            ⚡ Version Android en développement - Rejoins notre liste d&apos;attente pour les futures récompenses Amazon !
+            Version Android en cours de développement
           </p>
         </div>
       </section>

@@ -37,7 +37,7 @@ export default function Footer() {
               backgroundClip: 'text',
               margin: 0
             }}>
-              DareHive
+              <span className="darehive-text">DAREHIVE</span>
             </h3>
           </div>
           <p style={{
@@ -217,61 +217,23 @@ export default function Footer() {
 
         {/* Section Contact */}
         <div>
-          <h4 style={{
-            fontSize: '1.2rem',
-            fontWeight: '600',
-            color: 'var(--text-primary)',
-            marginBottom: '20px'
+          <div style={{
+            marginTop: '15px',
+            padding: '15px',
+            background: 'rgba(139, 92, 246, 0.1)',
+            borderRadius: '12px',
+            border: '1px solid var(--glass-border)'
           }}>
-            💌 Restons connectés
-          </h4>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            <a 
-              href="mailto:contact@darehive.app"
-              style={{
-                color: 'var(--text-secondary)',
-                textDecoration: 'none',
-                fontSize: '1rem',
-                transition: 'color 0.3s ease',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px'
-              }}
-            >
-              📧 contact@darehive.app
-            </a>
-            <a 
-              href="mailto:team@darehive.app"
-              style={{
-                color: 'var(--text-secondary)',
-                textDecoration: 'none',
-                fontSize: '1rem',
-                transition: 'color 0.3s ease',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px'
-              }}
-            >
-              👥 team@darehive.app
-            </a>
-            <div style={{
-              marginTop: '15px',
-              padding: '15px',
-              background: 'rgba(139, 92, 246, 0.1)',
-              borderRadius: '12px',
-              border: '1px solid var(--glass-border)'
+            <p style={{
+              color: 'var(--text-secondary)',
+              fontSize: '0.9rem',
+              margin: 0,
+              textAlign: 'center'
             }}>
-              <p style={{
-                color: 'var(--text-secondary)',
-                fontSize: '0.9rem',
-                margin: 0,
-                textAlign: 'center'
-              }}>
-                🚀 Version iOS disponible !<br/>
-                📱 Android en développement<br/>
-                🎁 Récompenses Amazon pour les plus actifs
-              </p>
-            </div>
+              🚀 Version iOS disponible !<br/>
+              📱 Version Android en cours de développement<br/>
+              🎁 Récompenses Amazon en développement
+            </p>
           </div>
         </div>
       </div>
@@ -295,7 +257,7 @@ export default function Footer() {
           justifyContent: 'center',
           gap: '8px'
         }}>
-          © {new Date().getFullYear()} DareHive
+          © {new Date().getFullYear()} <span className="darehive-text">DAREHIVE</span>
           <Image 
             src="/LogoRaph.png" 
             alt="Logo DareHive" 
