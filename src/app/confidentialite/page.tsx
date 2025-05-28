@@ -28,7 +28,7 @@ export default function Confidentialite() {
             textAlign: 'center',
             marginTop: '20px'
           }}>
-            Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}
+            Dernière mise à jour : 28 mai 2025
           </p>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function Confidentialite() {
                 color: 'var(--text-primary)',
                 marginTop: '40px'
               }}>
-                🛡️ <span className="darehive-text">DAREHIVE</span> Privacy Policy
+                🛡️ <span className="darehive-text">DAREHIVE</span> Confidentialité
               </h2>
               
               <div style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.7' }}>
@@ -77,10 +77,6 @@ export default function Confidentialite() {
                 <p style={{ marginBottom: '20px' }}>
                   Chez DareHive, ta vie privée est sacrée ! Nous nous engageons à protéger tes données personnelles 
                   avec les plus hauts standards de sécurité, conformément au RGPD européen.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                  Cette politique explique comment nous collectons, utilisons et protégeons tes informations 
-                  pour t&apos;offrir la meilleure expérience possible.
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
@@ -93,78 +89,81 @@ export default function Confidentialite() {
                   <strong>Contenu créé :</strong> Tes vidéos de défis, commentaires, likes et interactions sociales.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  <strong>Données d&apos;usage :</strong> Statistiques d&apos;utilisation anonymisées pour améliorer l&apos;app.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                  <strong>Données techniques :</strong> Type d&apos;appareil, version iOS, logs d&apos;erreurs (anonymisés).
+                  <strong>Données d&apos;usage :</strong> Statistiques d&apos;utilisation pour améliorer l&apos;app.
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
-                  🎯 3. Utilisation des Données
+                  📱 3. Suivi et Publicités
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
-                  • <strong>Fonctionnement de l&apos;app :</strong> Affichage de ton profil, classements, recommandations personnalisées
+                  <strong>Autorisation de suivi :</strong> Notre app peut demander l&apos;autorisation de suivre ton activité 
+                  à travers d&apos;autres apps et sites web pour :
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  • <strong>Amélioration du service :</strong> Analyse des tendances, développement de nouvelles fonctionnalités
+                  • <strong>Personnaliser les publicités</strong> que tu vois<br/>
+                  • <strong>Mesurer l&apos;efficacité</strong> de nos campagnes publicitaires<br/>
+                  • <strong>Améliorer nos services</strong> et ton expérience<br/>
+                  • <strong>Maintenir l&apos;app gratuite</strong> grâce aux revenus publicitaires
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  • <strong>Communication :</strong> Notifications push, emails importants (que tu peux désactiver)
+                  <strong>Tes droits :</strong> Tu peux refuser ce suivi à tout moment dans les réglages de ton appareil. 
+                  Les utilisateurs Premium bénéficient d&apos;une expérience sans publicité !
                 </p>
                 <p style={{ marginBottom: '20px' }}>
+                  <strong>Partenaires publicitaires :</strong> Nous utilisons Google AdMob qui peut collecter 
+                  ton identifiant publicitaire (IDFA) et des données d&apos;interaction avec les publicités.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  🎯 4. Utilisation des Données
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  • <strong>Fonctionnement de l&apos;app :</strong> Affichage de ton profil, classements, recommandations<br/>
+                  • <strong>Amélioration du service :</strong> Analyse des tendances, nouvelles fonctionnalités<br/>
+                  • <strong>Communication :</strong> Notifications push, emails importants (désactivables)<br/>
                   • <strong>Sécurité :</strong> Détection de comportements suspects, prévention des abus
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
-                  🛡️ 4. Protection et Sécurité
+                  🛡️ 5. Protection et Sécurité
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
-                  <strong>Chiffrement :</strong> Toutes tes données sont chiffrées en transit et au repos avec des algorithmes de niveau militaire.
+                  <strong>Chiffrement :</strong> Toutes tes données sont chiffrées avec des algorithmes de niveau militaire.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  <strong>Accès limité :</strong> Seuls nos développeurs autorisés peuvent accéder aux données, 
-                  uniquement pour la maintenance technique.
+                  <strong>Accès limité :</strong> Seuls nos développeurs autorisés peuvent accéder aux données.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  <strong>Serveurs sécurisés :</strong> Hébergement sur des infrastructures cloud certifiées ISO 27001.
+                  <strong>Serveurs sécurisés :</strong> Hébergement sur des infrastructures cloud certifiées.
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
-                  🤝 5. Partage des Données
+                  🤝 6. Partage des Données
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
                   <strong>Principe de base :</strong> Nous ne vendons JAMAIS tes données personnelles !
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  <strong>Partages autorisés :</strong> Uniquement avec ton consentement explicite ou pour des raisons légales.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                  <strong>Contenus publics :</strong> Tes vidéos et interactions publiques sont visibles par la communauté DareHive.
+                  <strong>Partages autorisés :</strong> Uniquement avec ton consentement ou pour des raisons légales.
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
-                  ⚙️ 6. Tes Droits
+                  ⚙️ 7. Tes Droits
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
-                  • <strong>Accès :</strong> Consulter toutes tes données stockées
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                  • <strong>Rectification :</strong> Corriger des informations incorrectes
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                  • <strong>Suppression :</strong> Effacer ton compte et toutes tes données
-                </p>
-                <p style={{ marginBottom: '20px' }}>
+                  • <strong>Accès :</strong> Consulter toutes tes données stockées<br/>
+                  • <strong>Rectification :</strong> Corriger des informations incorrectes<br/>
+                  • <strong>Suppression :</strong> Effacer ton compte et toutes tes données<br/>
                   • <strong>Portabilité :</strong> Récupérer tes données dans un format lisible
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
-                  📞 7. Contact
+                  📞 8. Contact
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
                   Questions sur tes données ? Écris-nous : 
-                  <a href="mailto:privacy@darehive.app" style={{ color: 'var(--accent-light)', textDecoration: 'none' }}>
-                    privacy@darehive.app
+                  <a href="mailto:contact@darehive.app" style={{ color: 'var(--accent-light)', textDecoration: 'none' }}>
+                    contact@darehive.app
                   </a>
                 </p>
               </div>
@@ -206,10 +205,6 @@ export default function Confidentialite() {
                   At DareHive, your privacy is sacred! We are committed to protecting your personal data 
                   with the highest security standards, in compliance with European GDPR.
                 </p>
-                <p style={{ marginBottom: '20px' }}>
-                  This policy explains how we collect, use and protect your information 
-                  to provide you with the best possible experience.
-                </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
                   📊 2. Data Collected
@@ -221,78 +216,81 @@ export default function Confidentialite() {
                   <strong>Created content:</strong> Your challenge videos, comments, likes and social interactions.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  <strong>Usage data:</strong> Anonymized usage statistics to improve the app.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                  <strong>Technical data:</strong> Device type, iOS version, error logs (anonymized).
+                  <strong>Usage data:</strong> Usage statistics to improve the app.
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
-                  🎯 3. Data Usage
+                  📱 3. Tracking and Advertising
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
-                  • <strong>App functionality:</strong> Display your profile, rankings, personalized recommendations
+                  <strong>Tracking authorization:</strong> Our app may request permission to track your activity 
+                  across other apps and websites to:
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  • <strong>Service improvement:</strong> Trend analysis, development of new features
+                  • <strong>Personalize the ads</strong> you see<br/>
+                  • <strong>Measure the effectiveness</strong> of our advertising campaigns<br/>
+                  • <strong>Improve our services</strong> and your experience<br/>
+                  • <strong>Keep the app free</strong> through advertising revenue
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  • <strong>Communication:</strong> Push notifications, important emails (you can disable them)
+                  <strong>Your rights:</strong> You can refuse this tracking at any time in your device settings. 
+                  Premium users enjoy an ad-free experience!
                 </p>
                 <p style={{ marginBottom: '20px' }}>
+                  <strong>Advertising partners:</strong> We use Google AdMob which may collect 
+                  your advertising identifier (IDFA) and ad interaction data.
+                </p>
+
+                <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
+                  🎯 4. Data Usage
+                </h3>
+                <p style={{ marginBottom: '20px' }}>
+                  • <strong>App functionality:</strong> Display your profile, rankings, recommendations<br/>
+                  • <strong>Service improvement:</strong> Trend analysis, new features<br/>
+                  • <strong>Communication:</strong> Push notifications, important emails (can be disabled)<br/>
                   • <strong>Security:</strong> Detection of suspicious behavior, abuse prevention
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
-                  🛡️ 4. Protection and Security
+                  🛡️ 5. Protection and Security
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
-                  <strong>Encryption:</strong> All your data is encrypted in transit and at rest with military-grade algorithms.
+                  <strong>Encryption:</strong> All your data is encrypted with military-grade algorithms.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  <strong>Limited access:</strong> Only our authorized developers can access data, 
-                  only for technical maintenance.
+                  <strong>Limited access:</strong> Only our authorized developers can access data.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  <strong>Secure servers:</strong> Hosting on ISO 27001 certified cloud infrastructures.
+                  <strong>Secure servers:</strong> Hosting on certified cloud infrastructures.
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
-                  🤝 5. Data Sharing
+                  🤝 6. Data Sharing
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
                   <strong>Basic principle:</strong> We NEVER sell your personal data!
                 </p>
                 <p style={{ marginBottom: '20px' }}>
-                  <strong>Authorized sharing:</strong> Only with your explicit consent or for legal reasons.
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                  <strong>Public content:</strong> Your videos and public interactions are visible to the DareHive community.
+                  <strong>Authorized sharing:</strong> Only with your consent or for legal reasons.
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
-                  ⚙️ 6. Your Rights
+                  ⚙️ 7. Your Rights
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
-                  • <strong>Access:</strong> View all your stored data
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                  • <strong>Rectification:</strong> Correct incorrect information
-                </p>
-                <p style={{ marginBottom: '20px' }}>
-                  • <strong>Deletion:</strong> Delete your account and all your data
-                </p>
-                <p style={{ marginBottom: '20px' }}>
+                  • <strong>Access:</strong> View all your stored data<br/>
+                  • <strong>Rectification:</strong> Correct incorrect information<br/>
+                  • <strong>Deletion:</strong> Delete your account and all your data<br/>
                   • <strong>Portability:</strong> Retrieve your data in a readable format
                 </p>
 
                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.3rem', marginTop: '30px', marginBottom: '15px' }}>
-                  📞 7. Contact
+                  📞 8. Contact
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
                   Questions about your data? Write to us: 
-                  <a href="mailto:privacy@darehive.app" style={{ color: 'var(--accent-light)', textDecoration: 'none' }}>
-                    privacy@darehive.app
+                  <a href="mailto:contact@darehive.app" style={{ color: 'var(--accent-light)', textDecoration: 'none' }}>
+                    contact@darehive.app
                   </a>
                 </p>
               </div>
@@ -348,21 +346,21 @@ export default function Confidentialite() {
             </div>
             
             <div className="feature-card">
-              <div className="feature-icon">⚡</div>
+              <div className="feature-icon">👑</div>
               <h3 style={{ 
                 fontSize: '1.3rem', 
                 fontWeight: '600', 
                 marginBottom: '16px',
                 color: 'var(--text-primary)'
               }}>
-                Suppression Instantanée
+                Premium Sans Pub
               </h3>
               <p style={{ 
                 color: 'var(--text-secondary)', 
                 fontSize: '1rem',
                 lineHeight: '1.6'
               }}>
-                Tu peux supprimer ton compte et toutes tes données en un clic. Suppression effective sous 24h maximum.
+                Les utilisateurs Premium profitent d&apos;une expérience totalement sans publicité et sans tracking.
               </p>
             </div>
           </div>
@@ -410,4 +408,4 @@ export default function Confidentialite() {
       </section>
     </main>
   );
-}
+} 
