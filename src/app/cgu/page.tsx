@@ -300,8 +300,8 @@ export default function CGU() {
                 </h4>
                 <ul style={{ color: 'var(--text-secondary)', paddingLeft: '20px', lineHeight: '1.8' }}>
                   <li><strong>DareHive Premium Mensuel</strong> - 3,99€ par mois</li>
-                  <li><strong>DareHive Premium Annuel</strong> - 29,99€ par an (économisez plus de 35%)</li>
-                  <li><strong>DareHive Premium à Vie</strong> - 59,99€ (paiement unique)</li>
+                  <li><strong>DareHive Premium Annuel</strong> - 34,99€ par an (économisez plus de 25%)</li>
+                  <li><strong>DareHive Premium à Vie</strong> - 89,99€ (paiement unique)</li>
                 </ul>
               </div>
 
