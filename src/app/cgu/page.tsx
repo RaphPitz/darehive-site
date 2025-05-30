@@ -271,6 +271,138 @@ export default function CGU() {
         </div>
       </section>
 
+      {/* Section EULA Apple - Exigée pour les abonnements */}
+      <section style={{ padding: '60px 20px' }}>
+        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+          <div className="glass" style={{ padding: '50px 40px' }}>
+            <h2 style={{
+              fontSize: 'clamp(1.8rem, 3vw, 2.5rem)',
+              fontWeight: '700',
+              marginBottom: '30px',
+              color: 'var(--text-primary)',
+              textAlign: 'center'
+            }}>
+              📱 Conditions d&apos;Utilisation des Abonnements (EULA)
+            </h2>
+            
+            <div style={{ marginBottom: '30px' }}>
+              <h3 style={{ 
+                color: 'var(--accent-light)', 
+                fontSize: '1.4rem', 
+                marginBottom: '20px' 
+              }}>
+                🔄 Informations sur les Abonnements Auto-Renouvelables
+              </h3>
+              
+              <div style={{ marginBottom: '25px' }}>
+                <h4 style={{ color: 'var(--text-primary)', fontSize: '1.2rem', marginBottom: '10px' }}>
+                  Abonnements disponibles :
+                </h4>
+                <ul style={{ color: 'var(--text-secondary)', paddingLeft: '20px', lineHeight: '1.8' }}>
+                  <li><strong>DareHive Premium Mensuel</strong> - 3,99€ par mois</li>
+                  <li><strong>DareHive Premium Annuel</strong> - 29,99€ par an (économisez plus de 35%)</li>
+                  <li><strong>DareHive Premium à Vie</strong> - 59,99€ (paiement unique)</li>
+                </ul>
+              </div>
+
+              <div style={{ marginBottom: '25px' }}>
+                <h4 style={{ color: 'var(--text-primary)', fontSize: '1.2rem', marginBottom: '10px' }}>
+                  Conditions de renouvellement :
+                </h4>
+                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', marginBottom: '15px' }}>
+                  • Les abonnements se renouvellent automatiquement sauf annulation au moins 24h avant la fin de la période en cours
+                </p>
+                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', marginBottom: '15px' }}>
+                  • Le montant sera débité de votre compte iTunes 24h avant la fin de la période
+                </p>
+                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', marginBottom: '15px' }}>
+                  • Vous pouvez gérer et annuler vos abonnements dans les Réglages de votre compte iTunes
+                </p>
+              </div>
+
+              <div style={{ marginBottom: '30px' }}>
+                <h4 style={{ color: 'var(--text-primary)', fontSize: '1.2rem', marginBottom: '15px' }}>
+                  📋 Conditions d&apos;Utilisation Standard Apple (EULA) :
+                </h4>
+                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', marginBottom: '15px' }}>
+                  DareHive utilise les <strong>Conditions d&apos;Utilisation Standard d&apos;Apple</strong> pour tous les achats et abonnements effectués via l&apos;App Store.
+                </p>
+                <div style={{ 
+                  background: 'var(--glass-dark)', 
+                  padding: '20px', 
+                  borderRadius: '15px',
+                  border: '1px solid var(--glass-border)',
+                  marginBottom: '20px'
+                }}>
+                  <p style={{ 
+                    color: 'var(--accent-light)', 
+                    fontSize: '1rem',
+                    margin: '0',
+                    textAlign: 'center'
+                  }}>
+                    🔗 <strong>Conditions d&apos;Utilisation Apple (EULA) :</strong>
+                  </p>
+                  <a 
+                    href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{ 
+                      color: 'var(--accent-light)', 
+                      fontSize: '0.95rem',
+                      display: 'block',
+                      textAlign: 'center',
+                      marginTop: '10px',
+                      textDecoration: 'underline'
+                    }}
+                  >
+                    https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+                  </a>
+                </div>
+              </div>
+
+              <div style={{ marginBottom: '30px' }}>
+                <h4 style={{ color: 'var(--text-primary)', fontSize: '1.2rem', marginBottom: '15px' }}>
+                  🔒 Politique de Confidentialité et Données :
+                </h4>
+                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', marginBottom: '15px' }}>
+                  Consultez notre politique de confidentialité complète pour comprendre comment nous collectons, utilisons et protégeons vos données :
+                </p>
+                <div style={{ textAlign: 'center' }}>
+                  <a 
+                    href="/confidentialite" 
+                    style={{ 
+                      color: 'var(--accent-light)', 
+                      textDecoration: 'none',
+                      fontSize: '1.1rem',
+                      fontWeight: '600'
+                    }}
+                  >
+                    📖 Consulter notre Politique de Confidentialité
+                  </a>
+                </div>
+              </div>
+
+              <div style={{ 
+                background: 'var(--glass-violet)', 
+                padding: '25px', 
+                borderRadius: '15px',
+                border: '1px solid var(--glass-border)',
+                textAlign: 'center'
+              }}>
+                <p style={{ 
+                  color: 'var(--text-primary)', 
+                  fontSize: '1rem',
+                  margin: '0',
+                  fontWeight: '600'
+                }}>
+                  ⚖️ En vous abonnant à DareHive Premium, vous acceptez ces conditions ainsi que les Conditions d&apos;Utilisation Standard d&apos;Apple.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section CTA */}
       <section style={{ 
         padding: '80px 20px',
