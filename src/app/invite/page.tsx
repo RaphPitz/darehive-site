@@ -80,7 +80,7 @@ export default function InvitePage() {
               Redirection en cours...
             </p>
             <p className="text-blue-200 text-sm">
-              Si l'app ne s'ouvre pas automatiquement, vous serez redirigé vers l'App Store.
+              Si l&apos;app ne s&apos;ouvre pas automatiquement, vous serez redirigé vers l&apos;App Store.
             </p>
           </div>
         ) : (
@@ -95,17 +95,17 @@ export default function InvitePage() {
               Ouvrir DareHive
             </button>
             <p className="text-blue-200 text-xs">
-              L'app s'ouvrira automatiquement ou vous serez redirigé vers l'App Store.
+              L&apos;app s&apos;ouvrira automatiquement ou vous serez redirigé vers l&apos;App Store.
             </p>
           </div>
         )}
 
         <div className="mt-8 pt-6 border-t border-white/20">
           <h2 className="text-lg font-semibold text-white mb-3">
-            Qu'est-ce que DareHive ?
+            Qu&apos;est-ce que DareHive ?
           </h2>
           <p className="text-blue-200 text-sm leading-relaxed">
-            DareHive est l'app de défis qui transforme votre quotidien en aventure ! 
+            DareHive est l&apos;app de défis qui transforme votre quotidien en aventure ! 
             Relevez des défis, gagnez des points, et grimpez dans le classement avec vos amis.
           </p>
         </div>
