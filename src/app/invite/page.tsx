@@ -34,7 +34,7 @@ export default function InvitePage() {
     if (isIOS) {
       // Essayer d'ouvrir l'app iOS d'abord
       const appScheme = `darehive://invite?ref=${refCode}`;
-      const appStoreURL = 'https://apps.apple.com/app/darehive/id6738159159'; // Remplacez par votre vrai ID
+      const appStoreURL = 'https://apps.apple.com/fr/app/darehive/id6745623662';
 
       // Tentative d'ouverture de l'app
       window.location.href = appScheme;
@@ -51,7 +51,7 @@ export default function InvitePage() {
 
     } else {
       // Pour desktop, rediriger vers l'App Store iOS
-      const appStoreURL = 'https://apps.apple.com/app/darehive/id6738159159';
+      const appStoreURL = 'https://apps.apple.com/fr/app/darehive/id6745623662';
       window.location.href = appStoreURL;
     }
   };

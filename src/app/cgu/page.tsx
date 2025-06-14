@@ -432,7 +432,7 @@ export default function CGU() {
         </p>
         
         <div className="download-badges">
-          <a href="https://apps.apple.com/app/darehive/id6478155193" target="_blank" rel="noopener noreferrer">
+          <a href="https://apps.apple.com/fr/app/darehive/id6745623662" target="_blank" rel="noopener noreferrer">
             <img 
               src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
               alt="Télécharger sur l'App Store"

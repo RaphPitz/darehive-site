@@ -133,7 +133,7 @@ export default function Navbar() {
 
         {/* Bouton de Téléchargement */}
         <a 
-          href="https://apps.apple.com/app/darehive/id6478155193"
+          href="https://apps.apple.com/fr/app/darehive/id6745623662"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-premium"
