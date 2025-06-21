@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import { LanguageProvider } from '../contexts/LanguageContext';
 
 export const metadata: Metadata = {
-  title: "<span className='darehive-text'>DAREHIVE</span> - Défis Vidéo Nouvelle Génération",
+  title: "DAREHIVE - Défis Vidéo Nouvelle Génération",
   description: "Rejoins la ruche, relève des défis fun, partage tes vidéos et grimpe dans le classement ! L'app de défis vidéo qui révolutionne le divertissement mobile.",
 };
 
