@@ -76,7 +76,7 @@ export default function CGU() {
                 </h3>
                 <p style={{ marginBottom: '20px' }}>
                   Les présentes Conditions Générales d&apos;Utilisation (CGU) régissent l&apos;utilisation de l&apos;application mobile <span className="darehive-text">DAREHIVE</span>,
-                  développée par notre équipe passionnée.
+                  développée par Darehive Studio (SASU), notre équipe passionnée.
                 </p>
                 <p style={{ marginBottom: '20px' }}>
                   En utilisant <span className="darehive-text">DAREHIVE</span>, tu acceptes intégralement ces conditions. L&apos;app est conçue pour être fun,

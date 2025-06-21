@@ -255,7 +255,8 @@ export default function Footer() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: '8px'
+          gap: '8px',
+          marginBottom: '10px'
         }}>
           © {new Date().getFullYear()} <span className="darehive-text">DAREHIVE</span>
           <Image 
@@ -266,6 +267,15 @@ export default function Footer() {
             style={{ borderRadius: '3px' }}
           />
           Créé avec passion pour la communauté des créateurs
+        </p>
+        <p style={{
+          color: 'var(--text-secondary)',
+          fontSize: '0.8rem',
+          margin: 0,
+          opacity: 0.8
+        }}>
+          Darehive Studio - SASU au capital de 100€<br/>
+          SIREN : 988 242 418 - Siège social : 60 rue François 1er, 75008 Paris
         </p>
       </div>
     </footer>

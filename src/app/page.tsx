@@ -258,6 +258,116 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Section Chèques Cadeaux Amazon - Animation */}
+      <section style={{ 
+        padding: '40px 20px',
+        background: 'linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 152, 0, 0.1))',
+        borderTop: '1px solid rgba(255, 193, 7, 0.3)',
+        borderBottom: '1px solid rgba(255, 193, 7, 0.3)',
+        position: 'relative',
+        overflow: 'hidden'
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '20px',
+            background: 'rgba(255, 193, 7, 0.2)',
+            padding: '20px 40px',
+            borderRadius: '25px',
+            border: '2px solid rgba(255, 193, 7, 0.5)',
+            backdropFilter: 'blur(10px)',
+            animation: 'pulse 2s infinite, glow 3s ease-in-out infinite alternate',
+            boxShadow: '0 10px 30px rgba(255, 193, 7, 0.3)'
+          }}>
+            <div style={{
+              fontSize: '3rem',
+              animation: 'bounce 1.5s infinite'
+            }}>
+              🎁
+            </div>
+            <div>
+              <h3 style={{
+                fontSize: '1.8rem',
+                fontWeight: '700',
+                margin: 0,
+                background: 'linear-gradient(45deg, #FFD700, #FFA500)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>
+                CHÈQUES CADEAUX AMAZON À GAGNER !
+              </h3>
+              <p style={{
+                fontSize: '1.2rem',
+                margin: '5px 0 0 0',
+                color: 'var(--text-primary)',
+                fontWeight: '600'
+              }}>
+                🏆 Les plus actifs remportent des récompenses exclusives
+              </p>
+            </div>
+            <div style={{
+              fontSize: '3rem',
+              animation: 'bounce 1.5s infinite 0.5s'
+            }}>
+              💰
+            </div>
+          </div>
+        </div>
+        
+        {/* Particules animées */}
+        <div style={{
+          position: 'absolute',
+          top: '20%',
+          left: '10%',
+          fontSize: '2rem',
+          animation: 'float 4s ease-in-out infinite'
+        }}>✨</div>
+        <div style={{
+          position: 'absolute',
+          top: '60%',
+          right: '15%',
+          fontSize: '1.5rem',
+          animation: 'float 3s ease-in-out infinite 1s'
+        }}>💎</div>
+        <div style={{
+          position: 'absolute',
+          bottom: '30%',
+          left: '20%',
+          fontSize: '1.8rem',
+          animation: 'float 3.5s ease-in-out infinite 2s'
+        }}>🎯</div>
+        
+        <style jsx>{`
+          @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+          }
+          
+          @keyframes glow {
+            from { 
+              box-shadow: 0 10px 30px rgba(255, 193, 7, 0.3);
+            }
+            to { 
+              box-shadow: 0 15px 40px rgba(255, 193, 7, 0.6), 0 0 20px rgba(255, 193, 7, 0.4);
+            }
+          }
+          
+          @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+          }
+          
+          @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(120deg); }
+            66% { transform: translateY(-10px) rotate(240deg); }
+          }
+        `}</style>
+      </section>
+
       {/* Section Fonctionnalités Premium */}
       <section style={{ padding: '80px 0' }}>
         <h2 className="section-title">

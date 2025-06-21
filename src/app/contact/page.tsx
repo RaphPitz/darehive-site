@@ -235,7 +235,7 @@ import { useLanguage } from '../../contexts/LanguageContext';
                   >
                     <span style={{ fontSize: '2rem' }}>👥</span>
                     <div>
-                      <div style={{ fontWeight: '600', fontSize: '1.1rem' }}>Équipe DAREHIVE</div>
+                      <div style={{ fontWeight: '600', fontSize: '1.1rem' }}>Darehive Studio - Équipe DAREHIVE</div>
                       <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>contact@darehive.app</div>
                     </div>
                   </a>
